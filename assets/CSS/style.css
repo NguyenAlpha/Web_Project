@@ -38,6 +38,6 @@ a.call {
     display: flex;
 }
 
-.in-call li {
-    line-height: 20px;
+.muc-dau a {
+    padding: 10px;
 }
