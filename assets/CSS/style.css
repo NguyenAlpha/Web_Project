@@ -18,26 +18,41 @@ body {
 
 .body-header {
     display: flex;
-    
-    
-}
-.body-header {
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    align-items: center;
     
 }
 
 .muc-dau {
-    padding: 20px;
     display: flex;
     margin-left: auto ;
-    
+    align-items: center;
 
-}
-
-a.call {
-    display: flex;
 }
 
 .muc-dau a {
-    padding: 10px;
+    padding: 16px;
+    color:rgb(0, 0, 0)
+
 }
+
+.muc-dau a:hover {
+    text-shadow: 1px 0px 0px rgb(0, 0, 0);
+}
+
+.fa-phone {
+    font-size: 28px;
+    padding: 4px;
+    color: rgb(61, 56, 56);
+}
+
+.muc-dau .thong-tin-lien-he {
+    display: flex;
+}
+
+.muc-dau .phone {
+    display:flex;
+    flex-direction:column;
+
+}
+
