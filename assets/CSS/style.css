@@ -27,7 +27,6 @@ body {
     display: flex;
     margin-left: auto ;
     align-items: center;
-
 }
 
 .muc-dau a {
@@ -58,6 +57,17 @@ body {
 
 .search {
     width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.fa-magnifying-glass {
+    position: relative;
+    right: 24px;
+}
+
+.fa-magnifying-glass :hover{
+    background-color: rgb(250, 22, 224);
 }
 
 .search input{
