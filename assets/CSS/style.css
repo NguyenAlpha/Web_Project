@@ -57,22 +57,16 @@ body {
 
 }
 
-.search {
-    width: 40%;
-    display: flex;
-    align-items: center;
-}
-
-.fa-magnifying-glass {
-    position: relative;
-    right: 36px;
-    padding: 9px;
-    border-radius: 7px;
-}
-
 .kinh-lup :hover{
     background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    
+}
 
+.search {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    min-width: 200px;
 }
 
 
@@ -81,7 +75,14 @@ body {
     border: 1px solid #000000;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fa-magnifying-glass {
+    position: relative;
+    right: 36px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .fixed {
