@@ -36,6 +36,16 @@ body {
     box-shadow: 0px 4px 6px rgba(116, 127, 225, 0.605); /* Bóng đổ */
     margin-bottom: 100px;
 }
+#form-register {
+    margin-bottom: 20cm;
+    flex-grow: 1;           
+    max-width: 400px;      
+    background: rgb(171, 108, 146); 
+    padding: 20px;  
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(116, 127, 225, 0.605); /* Bóng đổ */
+    margin-bottom: 100px;
+}
 .wrapper h1{
     font-size: 32px; /* Tùy chỉnh kích thước bạn mong muốn */
     font-weight: bold; /* Để chữ đậm nếu cần */
@@ -44,26 +54,37 @@ body {
   
 }
 
-.input-box input {
-    width: 100%;           /* Đảm bảo ô input chiếm toàn bộ chiều rộng của phần tử cha */
-    padding: 10px;
-    margin-bottom: 15px;   /* Thêm khoảng cách giữa các input */
-    border: 1px solid #ccc; /* Viền nhẹ để dễ nhìn */
-    border-radius: 4px;    /* Bo tròn các góc */
-    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước của input */
-    background-color: white; /* Nền trắng cho input */
-    outline: 0;
-    border: 0;
-    
-}
-.input-box i {
-    position: absolute;        /* Đặt icon ở vị trí tuyệt đối */
-    left: 10px;                /* Đặt icon cách bên trái một khoảng */
-    top: 50%;                  /* Căn chỉnh icon theo chiều dọc */
-    transform: translateY(-50%); /* Căn chỉnh chính xác ở giữa */
-    color: #888;               /* Màu sắc icon */
+.input-box {
+    display: flex;           /* Flexbox for horizontal alignment */
+    align-items: center;     /* Center items vertically */
+    margin-bottom: 10px;     /* Add space between input fields */
 }
 
+.input-box label {
+    width: 50px;            /* Adjust this width based on your design */
+    margin-right: 10px;      /* Space between label and input */
+    text-align: left;        /* Align label text to the left */
+    font-size: 1.4rem;       /* Adjust font size */
+    color: #333;
+    background-color: #007BFF;
+    flex-shrink: 0;
+    height: 40px;
+    width: 40px;
+    fill: #ccc;
+    color: #ccc;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.input-box input {
+    flex: 1;                 /* Take up remaining space */
+    padding: 10px;
+    border: 1px solid #ccc;  /* Add borders to the input */
+    border-radius: 4px;
+}
 
 .btn {
     width: 100%;          
