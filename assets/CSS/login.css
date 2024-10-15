@@ -35,34 +35,54 @@ body {
     box-shadow: 0px 4px 6px rgba(116, 127, 225, 0.605); /* Bóng đổ */
     margin-bottom: 100px;
 }
+#form-register {
+    margin-bottom: 20cm;
+    flex-grow: 1;           
+    max-width: 400px;      
+    background: rgb(171, 108, 146); 
+    padding: 20px;  
+    border-radius: 8px ;
+    box-shadow: 0px 4px 6px rgba(116, 127, 225, 0.605); /* Bóng đổ */
+    margin-bottom: 100px;
+}
 .wrapper h1{
     font-size: 32px; /* Tùy chỉnh kích thước bạn mong muốn */
     font-weight: bold; /* Để chữ đậm nếu cần */
     text-align: center; /* Căn giữa chữ */
     height: 50px;
-  
+    margin: 10px ;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid transparent; /* Bắt đầu với viền trong suốt */
+    border-radius: 2px; /* Bo tròn góc */
+    padding: 1px;
+    transition: 250ms ease; /* Hiệu ứng chuyển */
+}
+
+.input-box label {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 38px; /* Kích thước label như trong CSS của bạn */
+    height: 38px; /* Kích thước label như trong CSS của bạn */
+    background-color: #007BFF; /* Màu nền của label */
+    border-radius: 10px 0 0 10px; /* Bo tròn góc của label */
+    color: #ccc; /* Màu chữ/icon của label */
+    fill: #ccc; /* Màu của các biểu tượng SVG */
+    font-size: 1.5rem; /* Kích thước chữ/icon */
+    font-weight: 900;
+    flex-shrink: 0; /* Đảm bảo label không co lại quá nhỏ */
 }
 
 .input-box input {
-    width: 100%;           /* Đảm bảo ô input chiếm toàn bộ chiều rộng của phần tử cha */
+    flex: 1;                 /* Take up remaining space */
     padding: 10px;
-    margin-bottom: 15px;   /* Thêm khoảng cách giữa các input */
-    border: 1px solid #ccc; /* Viền nhẹ để dễ nhìn */
-    border-radius: 4px;    /* Bo tròn các góc */
-    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước của input */
-    background-color: white; /* Nền trắng cho input */
-    outline: 0;
-    border: 0;
-    
+    border: 1px solid #ccc;  /* Add borders to the input */
+    border-radius: 0 10px 10px 0;
 }
-.input-box i {
-    position: absolute;        /* Đặt icon ở vị trí tuyệt đối */
-    left: 10px;                /* Đặt icon cách bên trái một khoảng */
-    top: 50%;                  /* Căn chỉnh icon theo chiều dọc */
-    transform: translateY(-50%); /* Căn chỉnh chính xác ở giữa */
-    color: #888;               /* Màu sắc icon */
-}
-
 
 .btn {
     width: 100%;          
@@ -77,3 +97,25 @@ body {
 .btn:hover {
     background-color: #0056b3;
 }
+.input-box :hover{
+    border: 2px solid #007BFF;
+}
+/* Áp dụng hiệu ứng khi input nhận focus */
+.input-box input:focus {
+    outline: none;
+    border: 2px solid black; /* Đổi màu viền của input thành màu đen */
+    box-shadow: 0 0 8px gray; /* Hiệu ứng ánh sáng xung quanh thành màu xám */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Áp dụng hiệu ứng cho label khi input được focus */
+.input-box input:focus + label {
+    color: rgb(49, 43, 43); /* Đổi màu của label khi input được focus thành màu đen */
+    transition: color 0.3s ease;
+}
+/* Nếu muốn cả label và input cùng được focus với hiệu ứng outline */
+.input-box input:focus, 
+.input-box label:focus-within {
+    outline: 4px rgb(39, 33, 33); /* Hiệu ứng outline chung cho cả input và label thành màu đen */
+}
+
