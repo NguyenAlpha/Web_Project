@@ -59,7 +59,7 @@ body {
     border: 2px solid transparent; /* Bắt đầu với viền trong suốt */
     border-radius: 2px; /* Bo tròn góc */
     padding: 1px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển */
+    transition: 250ms ease; /* Hiệu ứng chuyển */
 }
 
 .input-box label {
@@ -97,6 +97,9 @@ body {
 .btn:hover {
     background-color: #0056b3;
 }
+.input-box :hover{
+    border: 2px solid #007BFF;
+}
 /* Áp dụng hiệu ứng khi input nhận focus */
 .input-box input:focus {
     outline: none;
@@ -107,21 +110,12 @@ body {
 
 /* Áp dụng hiệu ứng cho label khi input được focus */
 .input-box input:focus + label {
-    color: black; /* Đổi màu của label khi input được focus thành màu đen */
+    color: rgb(49, 43, 43); /* Đổi màu của label khi input được focus thành màu đen */
     transition: color 0.3s ease;
 }
-.input-box label :focus-within{
-    background-color: gray;
-    color: #333;
-}
-/* Để đảm bảo label trước input cũng được highlight khi input focus */
-.input-box label:focus-within {
-    color: black;
-}
-
 /* Nếu muốn cả label và input cùng được focus với hiệu ứng outline */
 .input-box input:focus, 
 .input-box label:focus-within {
-    outline: 2px solid black; /* Hiệu ứng outline chung cho cả input và label thành màu đen */
+    outline: 4px rgb(39, 33, 33); /* Hiệu ứng outline chung cho cả input và label thành màu đen */
 }
 
