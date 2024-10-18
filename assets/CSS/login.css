@@ -29,7 +29,7 @@ body {
     margin-bottom: 20cm;
     flex-grow: 1;           
     max-width: 400px;      
-    background: rgb(171, 108, 146); 
+    background: #06d6a0; 
     padding: 20px;  
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(116, 127, 225, 0.605); /* Bóng đổ */
@@ -39,7 +39,7 @@ body {
     margin-bottom: 20cm;
     flex-grow: 1;           
     max-width: 400px;      
-    background: rgb(171, 108, 146); 
+    background: #06d6a0; 
     padding: 20px;  
     border-radius: 8px ;
     box-shadow: 0px 4px 6px rgba(116, 127, 225, 0.605); /* Bóng đổ */
@@ -68,7 +68,7 @@ body {
     align-items: center; /* Căn giữa theo chiều dọc */
     width: 38px; /* Kích thước label như trong CSS của bạn */
     height: 38px; /* Kích thước label như trong CSS của bạn */
-    background-color: #007BFF; /* Màu nền của label */
+    background-color: #1bd60d; /* Màu nền của label */
     border-radius: 10px 0 0 10px; /* Bo tròn góc của label */
     color: #ccc; /* Màu chữ/icon của label */
     fill: #ccc; /* Màu của các biểu tượng SVG */
@@ -95,10 +95,10 @@ body {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #1bd60d;
 }
 .input-box :hover{
-    border: 2px solid #007BFF;
+    border: 2px solid #1bd60d;
 }
 /* Áp dụng hiệu ứng khi input nhận focus */
 .input-box input:focus {
