@@ -158,8 +158,30 @@ a {
 .header .nav {
   background-color: #ffffff;
 }
-
-.header--nav a {
+.Laptop {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 30px;
+}
+.Laptop button {
+  background-color: green;
+  font-size: 30px;
+}
+.Laptop img
+{
+  width: 300px;
+}
+.Laptop button:hover {
+  font-style: oblique;
+  background-color: rgb(153, 200, 145);
+}
+.Laptop
+{
+  font-size: 30px;
   display: flex;
   flex-direction: column;
+ align-items: center;
+
+  
 }
+
