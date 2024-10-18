@@ -107,6 +107,14 @@ body {
     box-shadow: 0 0 8px gray; /* Hiệu ứng ánh sáng xung quanh thành màu xám */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+.link{
+    margin-top: 10px;
+}
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
 
 /* Áp dụng hiệu ứng cho label khi input được focus */
 .input-box input:focus + label {
