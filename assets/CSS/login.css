@@ -16,33 +16,32 @@ body {
 .wrapper {
     
     display: flex;
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center;    /* Căn giữa theo chiều dọc */
-    height: 100vh;   
+    justify-content: center;
+    align-content: center;
+    align-items: center;   
+    height: max-content;   
     background-color: white;
     font-family: "Roboto", Arial, sans-serif;
-    
+    margin: 80px;
 }
 
 #form-login {
-    margin-bottom: 20cm;
     flex-grow: 1;           
     max-width: 400px;      
     background: #06d6a0; 
     padding: 20px;  
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(116, 127, 225, 0.605); /* Bóng đổ */
-    margin-bottom: 100px;
+    margin:80px;
 }
 #form-register {
-    margin-bottom: 20cm;
     flex-grow: 1;           
     max-width: 400px;      
     background: #06d6a0; 
     padding: 20px;  
     border-radius: 8px ;
     box-shadow: 0px 4px 6px rgba(116, 127, 225, 0.605); /* Bóng đổ */
-    margin-bottom: 100px;
+    margin:80px;
 }
 .wrapper h1{
     font-size: 32px; /* Tùy chỉnh kích thước bạn mong muốn */
@@ -55,6 +54,7 @@ body {
 .input-box {
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 2px solid transparent; /* Bắt đầu với viền trong suốt */
     border-radius: 2px; /* Bo tròn góc */
     padding: 1px;
@@ -94,7 +94,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #919c2e;
+    background-color: #9ba633;
 }
 .input-box :hover{
     border: 2px solid #1bd60d;
@@ -127,7 +127,7 @@ a:active {
     color: red; /* Màu của liên kết khi được nhấn */
 }
 @media (width <= 1000px ) {
-    .login-container {
+    .input-box {
         width: 90%; /* Chiếm 90% chiều rộng trên màn hình nhỏ */
         max-width: 350px; /* Giảm tối đa chiều rộng trên tablet */
     }
