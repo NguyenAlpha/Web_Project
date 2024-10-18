@@ -48,7 +48,8 @@ body {
 }
 
 .muc-dau a:hover {
-    color: aliceblue;
+    color: #3D3D3D ;
+    color: #ffd154;
     text-shadow: 1px 0px 0px rgb(255, 255, 255);
     background-color: rgba(14, 14, 15, 0.4);
 
@@ -153,4 +154,5 @@ body {
     padding: 10px;
 
 }
+
 

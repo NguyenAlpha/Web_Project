@@ -119,3 +119,9 @@ body {
     outline: 4px rgb(39, 33, 33); /* Hiệu ứng outline chung cho cả input và label thành màu đen */
 }
 
+@media (width <= 1000px ) {
+    .login-container {
+        width: 90%; /* Chiếm 90% chiều rộng trên màn hình nhỏ */
+        max-width: 350px; /* Giảm tối đa chiều rộng trên tablet */
+    }
+}
