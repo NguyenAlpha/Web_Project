@@ -36,6 +36,7 @@ a {
   margin-left: auto;
   align-items: center;
 }
+
 .fa-phone {
   padding-right: 4px;
 }
@@ -48,15 +49,7 @@ a {
 }
 
 .muc-dau a:hover {
-    color: #3D3D3D ;
-    color: #ffd154;
-    text-shadow: 1px 0px 0px rgb(255, 255, 255);
-    background-color: rgba(14, 14, 15, 0.4);
-
-} */
-
-.muc-dau a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 
 .muc-dau .thong-tin-lien-he {
@@ -155,6 +148,12 @@ a {
   background-color: #ffffff;
 }
 
+.header--nav-list a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .Laptop {
   width: 500px;
   margin: 0 auto;
@@ -186,4 +185,10 @@ a {
   
 }
 
+
+
+/* ======================================== @media ========================================= */
+@media screen and (width <= 1150) {
+    
+}
 
