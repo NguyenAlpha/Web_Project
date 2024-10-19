@@ -1,0 +1,56 @@
+/* ==================================bill======================== */
+.Bill {
+  background-color: white;
+}
+.hoadon img {
+  height: 100px;
+}
+.anh {
+  display: flex;
+  align-items: center;
+}
+input {
+  width: 30px;
+  outline: none;
+}
+.xoabutton {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #1764a7; /* Màu nền của button */
+  text-align: center;
+  text-decoration: none; /* Loại bỏ gạch chân của thẻ a */
+  border-radius: 5px; /* Bo góc của button */
+  margin: 0 auto;
+  cursor: pointer;
+}
+.xoabutton:hover {
+  background-color: blue;
+}
+.Bill {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.text {
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.hoadon {
+  margin-top: 100px;
+}
+table {
+  width: 100%;
+}
+table thead tr th:first-child {
+  text-align: left;
+}
+table tr td {
+  border-bottom: 1px solid #ddd;
+  padding: 14px 0;
+}
