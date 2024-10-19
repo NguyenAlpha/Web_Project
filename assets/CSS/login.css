@@ -11,10 +11,10 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    display:grid;
 }
 
 .wrapper {
-    
     display: flex;
     justify-content: center;
     align-content: center;
@@ -44,6 +44,9 @@ body {
     margin:80px;
 }
 .wrapper h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 32px; /* Tùy chỉnh kích thước bạn mong muốn */
     font-weight: bold; /* Để chữ đậm nếu cần */
     text-align: center; /* Căn giữa chữ */
@@ -77,13 +80,14 @@ body {
 }
 
 .input-box input {
-    flex: 1;                 /* Take up remaining space */
+    flex: 2;                 /* Take up remaining space */
     padding: 10px;
     border: 1px solid #ccc;  /* Add borders to the input */
     border-radius: 0 10px 10px 0;
 }
 
 .btn {
+    margin-top: 10px;
     width: 100%;          
     padding: 10px;
     background-color: #bfcd3e;
@@ -126,8 +130,11 @@ a:visited {
 a:active {
     color: red; /* Màu của liên kết khi được nhấn */
 }
+.Policies {
+    margin: 10px 0 0 10px;
+}
 @media (width <= 1000px ) {
-    .input-box {
+    .login-container {
         width: 90%; /* Chiếm 90% chiều rộng trên màn hình nhỏ */
         max-width: 350px; /* Giảm tối đa chiều rộng trên tablet */
     }
