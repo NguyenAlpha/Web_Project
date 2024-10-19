@@ -165,6 +165,79 @@ a {
 .header .nav {
   background-color: #fff;
 }
+/* =======================================Trang Linh Kiện================================================= */
+.Asus img {
+  width: 150px;
+}
+.Asus {
+  margin: 30 auto;
+}
+.list {
+  display: flex;
+}
+
+.Acer img {
+  width: 150px;
+}
+/* Khoảng cách giữa các item */
+.item {
+  margin: 2%;
+}
+.Macbook img {
+  width: 150px;
+}
+.item {
+  background-color: gainsboro;
+}
+.item div :hover {
+  font-weight: bolder;
+}
+.Lenovo img {
+  width: 150px;
+}
+/* ======================================Giỏ hàng====================================== */
+.nut
+{
+  display: flex;
+  margin: 0 auto;
+  
+}
+.button
+{
+  /* display: inline-block; */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #1764a7; /* Màu nền của button */
+  text-align: center;
+  text-decoration: none; /* Loại bỏ gạch chân của thẻ a */
+  border-radius: 5px; /* Bo góc của button */
+  margin: 0 auto;
+
+}
+.button:hover
+{|
+  background-color: #0e4779;
+  color: white;
+}
+/* icon giỏ hàng */
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+  font-size: 300px;
+  color: #4a4848;
+}
+/* Hiện không có sản phẩm nào trong giỏ hàng */
+.ghichu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #504d4d;
+  display: flex;
+  margin: 0 auto;
+}
 
 .header--nav-list a {
   display: flex;
