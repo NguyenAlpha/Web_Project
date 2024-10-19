@@ -1,12 +1,18 @@
-<!-- https://web4s.vn/view-demo/dienmay08 -->
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vie">
   <head>
+    <title>Giỏ hàng</title>
     <meta charset="UTF-8" />
-    <meta name="Linh kiện" content="width=device-width, initial-scale=1.0" />
-    <!-- reset css -->
-    <link rel="stylesheet" href="./assets/CSS/reset.css" />
+    <meta
+      name="web bán sextoy"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/CSS/login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- reset css -->
+    <link rel="stylesheet" href="../assets/CSS/reset.css" />
     <!-- font chữ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Sen:wght@700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link The iconic SVG by font-awesome and https://fontawesome.com/icons-->
     <link
       rel="stylesheet"
@@ -25,11 +31,10 @@
     />
 
     <!-- link file style css -->
-    <link rel="stylesheet" href="/assets/CSS/reset.css" />
-    <link rel="stylesheet" href="/assets/CSS/style.css" />
+    <link rel="stylesheet" href="../assets/CSS/style.css" />
     <title>Bán linh liện PC</title>
   </head>
-  <body style="height: 3000px">
+  <body>
     <header class="header fixed">
       <div class="main-content">
         <div class="body-header">
@@ -74,10 +79,9 @@
                   <a href="/page/register.html">Đăng ký</a>
                 </li>
               </ul>
-            </div>
 
             <!-- giỏ hàng -->
-            <a class="gio-hang" href="/page/Giỏ Hàng.html">
+            <a class="gio-hang" href="">
               <i class="fa-solid fa-cart-shopping"></i>
               <span>Giỏ hàng</span>
             </a>
@@ -92,7 +96,7 @@
               <nav class="header--nav">
                 <ul class="header--nav-list">
                   <li>
-                    <a href="./assets/Accessory/Laptop+PC/Laptop+PC.html">
+                    <a href="/assets/Accessory/Laptop+PC/Laptop+PC.html">
                       <i class="fa-solid fa-laptop"></i>
                       <span class="header--nav__utilities">Laptop</span>
                     </a>
@@ -105,38 +109,26 @@
                   </li>
                   <li>
                     <a href="">
-                      <i class="fa-solid fa-tachograph-digital"></i>
-                      <span class="header--nav__utilities">Main</span>
+                      <i class="fa-solid fa-microchip"></i>
+                      <span class="header--nav__utilities">CPU & Main</span>
                     </a>
                   </li>
                   <li>
                     <a href="">
                       <i class="fa-solid fa-microchip"></i>
-                      <span class="header--nav__utilities">CPU</span>
+                      <span class="header--nav__utilities">GPU</span>
                     </a>
                   </li>
                   <li>
                     <a href="">
                       <i class="fa-solid fa-memory"></i>
-                      <span>RAM </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa-solid fa-hard-drive"></i>
-                      <span>Ổ cứng</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa-solid fa-sd-card"></i>
-                      <span>Thẻ nhớ</span>
+                      <span>RAM, Ổ cứng, Thẻ nhớ</span>
                     </a>
                   </li>
                   <li>
                     <a href="">
                       <i class="fa-solid fa-car-battery"></i>
-                      <span>Nguồn</span>
+                      <span>Tản nhiệt, Nguồn</span>
                     </a>
                   </li>
                   <li>
@@ -158,5 +150,17 @@
         </div>
       </div>
     </header>
+    <div class="Giohang">
+        <!-- Chưa có sản phẩm nào -->
+        <!-- icon -->
+       <div class="icon">
+        <i class="fa-solid fa-shop-slash"></i>
+       </div>
+       <!-- ghi chú -->
+        <div class="ghichu">Hiện không có sản phẩm nào trong giỏ hàng</div>
+        <!-- button -->
+        <div class="nut"><a href="/index.html" class="button">Mua sắm ngay</a></div>
+      </div>
+    </div>
   </body>
 </html>
