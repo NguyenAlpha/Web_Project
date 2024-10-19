@@ -1,5 +1,7 @@
 .forgotbox {
     width: 500px;
+    height: 200px;
+    
             padding: 20px;
             border: 2px solid black;
             border-radius: 10px;
@@ -72,3 +74,8 @@ body {
     font-weight: 900;
     flex-shrink: 0; /* Đảm bảo label không co lại quá nhỏ */
 }
+.get {
+       display: flex;
+       justify-content: center;
+}
+
