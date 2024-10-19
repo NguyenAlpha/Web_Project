@@ -50,8 +50,26 @@ table {
 table thead tr th:first-child {
   text-align: left;
 }
-table tr td {
-    
+table tr td 
+{
+
   border-bottom: 1px solid #ddd;
   padding: 14px 0;
 }
+.price {
+  font-weight: bold;
+  /* display: flex; */
+  margin: 40px 500px;
+  width: 900px;
+}
+/* table thead tr th:last-child {
+    text-align: right;
+  } */
+/* .xoa
+{
+    display: flex;
+}
+table tbody tr td:last-child
+  {
+    text-align: right;
+  } */
