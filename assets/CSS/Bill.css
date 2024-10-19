@@ -5,10 +5,10 @@
 .hoadon img {
   height: 100px;
 }
-.anh {
-  display: flex;
-  align-items: center;
-}
+ /* .anh {
+   display: flex; 
+  align-items: center; 
+} */
 input {
   width: 30px;
   outline: none;
@@ -51,6 +51,7 @@ table thead tr th:first-child {
   text-align: left;
 }
 table tr td {
+    
   border-bottom: 1px solid #ddd;
   padding: 14px 0;
 }
