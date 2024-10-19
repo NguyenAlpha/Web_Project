@@ -5,11 +5,10 @@
         <meta charset="UTF-8">
         <meta name="web bán sextoy" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../assets/CSS/login.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+        
         <!-- reset css -->
-        <link rel="stylesheet" href="../assets/CSS/reset.css">
+        <link rel="stylesheet" href="/assets/CSS/reset.css">
         <!-- font chữ -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,165 +16,257 @@
         
         <!-- link The iconic SVG by font-awesome and https://fontawesome.com/icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="/assets/CSS/login.css">
         
         <!-- link file style css --> 
-        <link rel="stylesheet" href="../assets/CSS/style.css">
+        <link rel="stylesheet" href="/assets/CSS/style.css">
+
+        <!-- link file responsive css -->
+        <link rel="stylesheet" href="/assets/CSS/header_responsive.css"/>
         <title>Bán linh liện PC</title>
     </head>
     <body>
         <header class="header fixed">
-            <div class="main-content">
-              <div class="body-header">
-                <!-- logo -->
-                <div class="logo">
-                  <a href="/index.html">
-                    <img src="/assets/img/LOGO DEMO (1).svg" alt="LOGO DEMO" />
-                  </a>
-                </div>
-      
-                <!-- search -->
-                <div class="search">
-                  <input type="text" placeholder="Mua gì hôm nay?" required />
-                  <button>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </div>
-                
-                <!-- mục đầu -->
-                <div class="muc-dau">
-                  <!-- liên hệ -->
-                  <a class="thong-tin-lien-he" href="tel:0328989480">
-                    <i class="fa-solid fa-phone"></i>
-                    <div class="phone">
-                      <span> Hotline</span>
+          <div class="main-content">
+            <div class="body-header">
+              <!-- logo -->
+              <div class="logo">
+                <a href="/index.html">
+                  <img src="/assets/img/LOGO DEMO (1).svg" alt="LOGO DEMO" />
+                </a>
+              </div>
+    
+              <!-- search -->
+              <div class="search">
+                <input type="text" placeholder="Mua gì hôm nay?" required />
+                <button>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+    
+                <!-- Tablet/mobile header mục đầu -->
+                <div class="mobile-header">
+                  <input
+                    type="checkbox"
+                    name="menu-checkbox"
+                    id="menu-checkbox"
+                    class="menu-checkbox"
+                    hidden
+                  />
+                  <label for="menu-checkbox">
+                    <i class="fa-solid fa-bars"></i>
+                  </label>
+                  <label for="menu-checkbox" class="overlay"></label>
+    
+                  <!-- menu-drawer -->
+                  <div class="menu-drawer menu-drawer--align">
+                    <!-- mục đầu -->
+                    <div class="muc-dau">
+                      <!-- Lùi lại -->
+                      <label for="menu-checkbox">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                      </label>
+    
+                      <!-- liên hệ -->
+                      <a class="muc-dau__item" href="tel:0328989480">
+                        <i class="fa-solid fa-phone"></i>
+                        <span> Hotline</span>
+                      </a>
+    
+                      <!-- đăng nhập -->
+                      <div class="login">
+                        <div class="login--visible">
+                          <a class="muc-dau__item" href="/page/login.html">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            <span>Tài khoản</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                          </a>
+                        </div>
+    
+                        <ul class="login__list">
+                          <li class="login__item">
+                            <a class="muc-dau__item" href="/page/login.html"
+                              >Đăng nhập</a
+                            >
+                          </li>
+                          <li class="login__item">
+                            <a class="muc-dau__item" href="/page/register.html"
+                              >Đăng ký</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+    
+                      <!-- giỏ hàng -->
+                      <a class="muc-dau__item gio-hang" href="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Giỏ hàng</span>
+                      </a>
                     </div>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- mục đầu -->
+              <div class="muc-dau">
+                <!-- liên hệ -->
+                <a class="muc-dau__item" href="tel:0328989480">
+                  <i class="fa-solid fa-phone"></i>
+                  <span> Hotline</span>
+                </a>
+    
+                <!-- đăng nhập -->
+                <div class="login">
+                  <a class="muc-dau__item" href="/page/login.html">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>Tài khoản</span>
+                    <i class="fa-solid fa-angle-down"></i>
                   </a>
-      
-                  <!-- đăng nhập -->
-                  <div class="login">
-                    <a class="login-btn" href="#!">
-                      <i class="fa-solid fa-right-to-bracket"></i>
-                      <span>Tài khoản</span>
-                      <i class="fa-solid fa-angle-down"></i>
-                    </a>
-      
-                    <ul>
+    
+                  <ul class="login__list">
+                    <li class="login__item">
+                      <a class="muc-dau__item" href="/page/login.html">Đăng nhập</a>
+                    </li>
+                    <li class="login__item">
+                      <a class="muc-dau__item" href="/page/register.html"
+                        >Đăng ký</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+    
+                <!-- giỏ hàng -->
+                <a class="muc-dau__item gio-hang" href="">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>Giỏ hàng</span>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- NAV -->
+          <div class="nav">
+            <div class="main-content">
+              <div class="header-menu">
+                <div class="haeder-menu-des">
+                  <nav class="header--nav">
+                    <ul class="header--nav-list">
                       <li>
-                        <a href="/page/login.html">Đăng nhập</a>
+                        <a href="">
+                          <i class="fa-solid fa-laptop"></i>
+                          <span class="header--nav__utilities">Laptop</span>
+                        </a>
                       </li>
                       <li>
-                        <a href="/page/register.html">Đăng ký</a>
+                        <a href="">
+                          <i class="fa-solid fa-display"></i>
+                          <span class="header--nav__utilities">Màn hình</span>
+                        </a>
                       </li>
                       <li>
-                        <a href="/page/Login-admin">Quản trị viên</a>
+                        <a href="">
+                          <i class="fa-solid fa-tachograph-digital"></i>
+                          <span class="header--nav__utilities">Main</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <i class="fa-solid fa-microchip"></i>
+                          <span class="header--nav__utilities">CPU</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <i class="fa-solid fa-memory"></i>
+                          <span>RAM </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <i class="fa-solid fa-hard-drive"></i>
+                          <span>Ổ cứng</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <i class="fa-solid fa-sd-card"></i>
+                          <span>Thẻ nhớ</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <i class="fa-solid fa-car-battery"></i>
+                          <span>Nguồn</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <i class="fa-solid fa-computer-mouse"></i>
+                          <span>Chuột</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <i class="fa-solid fa-keyboard"></i>
+                          <span>Bàn phím</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <i class="fa-solid fa-headphones"></i>
+                          <span>Tai nghe</span>
+                        </a>
                       </li>
                     </ul>
-                  </div>
-      
-                  <!-- giỏ hàng -->
-                  <a class="gio-hang" href="">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span>Giỏ hàng</span>
-                  </a>
+                  </nav>
                 </div>
               </div>
             </div>
-      
-            <div class="nav">
-              <div class="main-content">
-                <div class="header-menu">
-                  <div class="haeder-menu-des">
-                    <nav class="header--nav">
-                      <ul class="header--nav-list">
-                        <li>
-                          <a href="">
-                              <i class="fa-solid fa-laptop"></i>
-                            <span class="header--nav__utilities">Laptop</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i class="fa-solid fa-display"></i>
-                            <span class="header--nav__utilities">Màn hình</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i class="fa-solid fa-microchip"></i>
-                            <span class="header--nav__utilities">CPU & Main</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i class="fa-solid fa-microchip"></i>
-                            <span class="header--nav__utilities">GPU</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i class="fa-solid fa-memory"></i>
-                            <span>RAM, Ổ cứng, Thẻ nhớ</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i class="fa-solid fa-car-battery"></i>
-                            <span>Tản nhiệt, Nguồn</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i class="fa-solid fa-computer-mouse"></i>
-                            <span>Chuột & Bàn phím</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>Tai nghe</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </header>
+          </div>
+        </header>
     
-    <div class="wrapper">
-        <form action="" id="form-register">
-            <h1>Đăng Ký</h1>
-                <div class="input-box">
-                    <label for="username"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></label>
-                    <input type="text" id= "username" placeholder="Tên đăng ký" required>
-                </div>
-                <div class="input-box">
-                    <label for="email"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></label>
-                    <input type="email" id="email" placeholder="Email" required>
-                </div>
-                <div class="input-box">
-                    <label for="password"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg></label>
-                    <input type="password" id="password" placeholder="Mật khẩu" required>
-                    
-                </div>
-                <div class="input-box">
-                    <label for="repeat-password"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg></label>
-                    <input type="repeat-password" id= "repeat-password" placeholder="Nhập lại mật khẩu" required>
-                    
-                </div>
-            
-                
-                <div class="Policies"></div>
+    <main>
+      <div class="wrapper">
+          <form action="" id="form-register">
+              <h1>Đăng Ký</h1>
+  
+              <!-- username -->
+              <div class="input-box">
+                  <label for="username"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></label>
+                  <input type="text" id= "username" placeholder="Tên đăng ký" required>
+              </div>
+  
+              <!-- emal -->
+              <div class="input-box">
+                  <label for="email"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></label>
+                  <input type="email" id="email" placeholder="Email" required>
+              </div>
+  
+              <!-- password -->
+              <div class="input-box">
+                  <label for="password"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg></label>
+                  <input type="password" id="password" placeholder="Mật khẩu" required>
+              </div>
+  
+              <!-- repeat-password -->
+              <div class="input-box">
+                  <label for="repeat-password"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg></label>
+                  <input type="repeat-password" id= "repeat-password" placeholder="Nhập lại mật khẩu" required>
+              </div>
+              
+              <!-- checkbox -->
+              <div class="Policies">
                 <label><input type="checkbox"> Tôi đã đọc và đồng ý  </label>
-                <a href="#"> điều khoản và dịch vụ.</a>
-       
-        <button type= "submit"class ="btn"> Xác nhận</button>
-        <div class="link">
-            <p style="display: inline;">Có tài khoản rồi?</p>
-            <a href="../page/login.html"> Đăng nhập </a>
-        </div>
-    </div>
-</form>
+                <a href="#!"> điều khoản và dịch vụ.</a>
+              </div>
+         
+          <button type= "submit"class ="btn"> Xác nhận</button>
+          <div class="link">
+              <p style="display: inline;">Có tài khoản rồi?</p>
+              <a href="../page/login.html" class="link__btn"> Đăng nhập </a>
+          </div>
+          </form>
+      </div>
+    </main>
 </body>
 </html>
