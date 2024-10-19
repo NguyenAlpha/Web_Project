@@ -14,13 +14,12 @@ body {
 }
 
 .wrapper {
-    
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;   
     height: max-content;   
-    background-color: white;
+    background-color: #f4f4f4;
     font-family: "Roboto", Arial, sans-serif;
     margin: 80px;
 }
@@ -44,6 +43,9 @@ body {
     margin:80px;
 }
 .wrapper h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 32px; /* Tùy chỉnh kích thước bạn mong muốn */
     font-weight: bold; /* Để chữ đậm nếu cần */
     text-align: center; /* Căn giữa chữ */
@@ -77,10 +79,16 @@ body {
 }
 
 .input-box input {
-    flex: 1;                 /* Take up remaining space */
+    flex: 2;                 /* Take up remaining space */
     padding: 10px;
     border: 1px solid #ccc;  /* Add borders to the input */
     border-radius: 0 10px 10px 0;
+}
+
+.remember-forgot {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn {
@@ -91,6 +99,15 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.link {
+    margin-top: 8px;
+}
+
+.link__btn {
+    color: rgb(81, 57, 218);
+    margin-left: 4px;
 }
 
 .btn:hover {
@@ -107,6 +124,16 @@ body {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.link{
+    margin-top: 10px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
 /* Áp dụng hiệu ứng cho label khi input được focus */
 .input-box input:focus + label {
     color: rgb(49, 43, 43); /* Đổi màu của label khi input được focus thành màu đen */
@@ -117,17 +144,9 @@ body {
 .input-box label:focus-within {
     outline: 4px rgb(39, 33, 33); /* Hiệu ứng outline chung cho cả input và label thành màu đen */
 }
-a:hover{
-    color: red;
-}
-a:visited {
-    color: #0355ad; /* Màu của liên kết đã nhấp vào */
-}
-a:active {
-    color: red; /* Màu của liên kết khi được nhấn */
-}
+
 @media (width <= 1000px ) {
-    .input-box {
+    .login-container {
         width: 90%; /* Chiếm 90% chiều rộng trên màn hình nhỏ */
         max-width: 350px; /* Giảm tối đa chiều rộng trên tablet */
     }

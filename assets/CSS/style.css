@@ -6,6 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
 }
 
 .header {
@@ -15,8 +16,10 @@ body {
 a {
   color: #151c25;
 }
-.header .main-content {
+
+.main-content {
   width: 1200px;
+  max-width: calc(100% - 20px);
   margin: 0px auto;
 }
 
@@ -26,34 +29,25 @@ a {
 
 .body-header {
   display: flex;
-  background-color: #06d6a0;
   align-items: center;
+  justify-content: space-between;
   padding-top: 14px;
 }
 
 .muc-dau {
   display: flex;
-  margin-left: auto;
   align-items: center;
 }
 
-.fa-phone {
-  padding-right: 4px;
-}
 
-.muc-dau a {
+.muc-dau__item {
   padding: 10px;
   color: #151c25;
-  transition: text-shadow 0.3s ease, background-color 0.3s ease;
-  text-align: center;
+  transition: color 0.15s ease;
 }
 
-.muc-dau a:hover {
+.muc-dau__item:hover {
   color: #fff;
-}
-
-.muc-dau .thong-tin-lien-he {
-  display: flex;
 }
 
 .search {
@@ -89,13 +83,41 @@ a {
   display: flex;
   position: relative;
 }
-
+.register{
+  display:flex;
+  position: relative;
+}
 .fa-angle-down {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
 
-.login ul {
+.login__list {
+  position: absolute;
+  top: 40px;
+  background-color: #06d6a0;
+  border-radius: 10px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.418);
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.login:hover .fa-angle-down {
+  transform: rotate(0deg);
+}
+
+.login:hover .login__list {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.login__item {
+  padding: 12px;
+}
+.register ul {
   /* display: none; */
   position: absolute;
   top: 40px;
@@ -111,23 +133,22 @@ a {
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.418);
 }
 
-.login:hover ul {
+.register:hover ul {
   /* display: block; */
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-.login:hover .fa-angle-down {
+.register:hover .fa-angle-down {
   transform: rotate(0deg);
 }
 
-.login li {
+.register li {
   /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
   border-radius: 10px;
   margin: 8px;
 }
-
 .fixed {
   position: sticky;
   top: -18px;
@@ -137,15 +158,12 @@ a {
 
 .header--nav-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.header--nav > ul > li {
-  padding: 10px;
-}
 
 .header .nav {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 /* =======================================Trang Linh Kiện================================================= */
 .Asus img {
@@ -219,4 +237,55 @@ a {
   color: #504d4d;
   display: flex;
   margin: 0 auto;
+}
+
+.header--nav-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 8px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.header--nav-list a:hover {
+  background-color: #151c25;
+  color: #fff;
+}
+
+/* ========================================= MAIN ADV===================================== */
+.huge-advertisement--img {
+  margin-top: 16px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+
+
+
+.Laptop {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.Laptop button {
+  background-color: green;
+  font-size: 30px;
+}
+
+.Laptop img {
+  width: 300px;
+}
+
+.Laptop button:hover {
+  font-style: oblique;
+  background-color: rgb(153, 200, 145);
+}
+
+.Laptop {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

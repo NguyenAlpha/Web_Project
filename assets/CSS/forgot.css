@@ -1,0 +1,81 @@
+.forgotbox {
+    width: 500px;
+    height: 200px;
+    
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-self: center;
+            background-color: #06d6a0;
+
+}
+.forgotbox h1 {
+    
+    font-size: 32px; /* Tùy chỉnh kích thước bạn mong muốn */
+    font-weight: bold; /* Để chữ đậm nếu cần */
+    text-align: center; /* Căn giữa chữ */
+    height: 50px;
+    margin: 10px ;
+}
+body {
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #f0f0f0; 
+    flex-grow: 1;
+}
+.forgotten { 
+    width: 100%;          
+    padding: 10px;
+    background-color: #8fd372;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+     
+}
+.forgotten:hover {
+    background-color: darkgray;
+}
+
+
+.input-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid transparent; /* Bắt đầu với viền trong suốt */
+    border-radius: 2px; /* Bo tròn góc */
+    padding: 1px;
+    transition: 250ms ease; /* Hiệu ứng chuyển */
+}
+
+.input-box input {
+    width: 300px; /* Điều chỉnh độ rộng bằng pixel */
+    height: 30px; /* Điều chỉnh độ cao bằng pixel */
+    border: 1px solid #ccc; /* Thêm viền */
+    padding: 5px
+    
+}
+.input-box label {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 38px; /* Kích thước label như trong CSS của bạn */
+    height: 38px; /* Kích thước label như trong CSS của bạn */
+    background-color: #78b074; /* Màu nền của label */
+    border-radius: 10px 0 0 10px; /* Bo tròn góc của label */
+    color: #ccc; /* Màu chữ/icon của label */
+    fill: #ccc; /* Màu của các biểu tượng SVG */
+    font-size: 1.5rem; /* Kích thước chữ/icon */
+    font-weight: 900;
+    flex-shrink: 0; /* Đảm bảo label không co lại quá nhỏ */
+}
+.get {
+       display: flex;
+       justify-content: center;
+}
+
