@@ -216,7 +216,7 @@ a {
 
 }
 .button:hover
-{|
+{
   background-color: #0e4779;
   color: white;
 }
@@ -288,4 +288,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+/* ==================================bill======================== */
+.Bill
+{
+  background-color: white;
 }
