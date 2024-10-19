@@ -83,7 +83,10 @@ a {
   display: flex;
   position: relative;
 }
-
+.register{
+  display:flex;
+  position: relative;
+}
 .fa-angle-down {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
@@ -114,7 +117,38 @@ a {
 .login__item {
   padding: 12px;
 }
+.register ul {
+  /* display: none; */
+  position: absolute;
+  top: 40px;
+  background-color: #06d6a0;
+  border-radius: 10px;
+  width: 146px;
+  min-width: 146px;
+  line-height: 28px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.418);
+}
 
+.register:hover ul {
+  /* display: block; */
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.register:hover .fa-angle-down {
+  transform: rotate(0deg);
+}
+
+.register li {
+  /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+  border-radius: 10px;
+  margin: 8px;
+}
 .fixed {
   position: sticky;
   top: -18px;
