@@ -19,7 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Sen:wght@700&display=swap"
       rel="stylesheet"
     />
-
+    <!-- link Bill -->
+     <link rel="stylesheet" href="/assets/CSS/Bill.css">
     <!-- link The iconic SVG by font-awesome and https://fontawesome.com/icons-->
     <link
       rel="stylesheet"
@@ -233,20 +234,39 @@
           </nav>
         </div>
       </div>
-     
+    </header>
 
-    <div class="hoadon">
-        <section class="Bill">
+    <main>
+        <div class="hoadon">
+            <div class="text"><p>Hóa Đơn</p></div>
+      <section class="Bill">    
             <table>
-                <thead>
-                    <tr>Sản phẩm </tr>
-                    <tr>Giá </tr>
-                    <tr>Số lượng </tr>
-                    <tr>Xóa </tr>
-                </thead>
-                <tbody></tbody>
+              <thead>
+                <tr>
+                  <th>Sản Phẩm</th>
+                  <th>Giá</th>
+                  <th>Số lượng</th>
+                  <th>Chọn</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="anh">
+                    <img
+                      src="/assets/Accessory/Laptop+PC/Acer Predator Helios Neo 16/1.jpg"
+                      alt=""
+                    />Laptop Acer
+                  </td>
+                  <td>
+                    <p><span>320.000<sub>đ</sub></span></p>
+                  </td>
+                  <td><input type="number" value="1" min="0" /></td>
+                  <td class="xoabutton">Xóa</td>
+                </tr>
+              </tbody>
             </table>
-        </section>
-    </div>
+          </section>
+        </div>
+    </main>
   </body>
 </html>
