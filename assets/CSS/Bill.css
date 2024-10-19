@@ -5,10 +5,10 @@
 .hoadon img {
   height: 100px;
 }
- /* .anh {
-   display: flex; 
-  align-items: center; 
-} */
+.anh_div {
+  display: flex;
+  align-items: center;
+}
 input {
   width: 30px;
   outline: none;
