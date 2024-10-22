@@ -87,3 +87,8 @@ table tbody tr td:last-child
  margin: 0 auto; 
  display: flex; 
 }
+table
+{
+  border: 1px solid #ddd;
+  padding: 4%;
+}
