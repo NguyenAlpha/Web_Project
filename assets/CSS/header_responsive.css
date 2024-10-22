@@ -108,7 +108,7 @@
   }
 
   .login--visible,
-  .fa-cart-shopping,
+  .header .fa-cart-shopping,
   .fa-phone {
     display: none;
   }
