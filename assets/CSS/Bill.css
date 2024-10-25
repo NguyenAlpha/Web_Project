@@ -92,3 +92,21 @@ table
   border: 1px solid #ddd;
   padding: 4%;
 }
+.head
+{
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #189fd4; /* Màu nền của button */
+  text-align: center;
+  text-decoration: none; /* Loại bỏ gạch chân của thẻ a */
+  border-radius: 5px; /* Bo góc của button */
+  margin: 0 auto;
+}
+.body
+{
+  height: 500px;
+  width: 970px;
+  overflow-y: scroll;
+}
