@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f4f4f4;
+  background-color: #fff;
 }
 
 .header {
@@ -76,7 +76,7 @@ a {
 
 .search button:hover {
   background-color: #151c25;
-  color: #ffffff;
+  color: #fff;
 }
 
 .login {
@@ -152,6 +152,7 @@ a {
 .fixed {
   position: sticky;
   top: -18px;
+  z-index: 1;
 }
 
 /* =================================== header nav ========================================================= */
@@ -163,7 +164,7 @@ a {
 
 
 .header .nav {
-  background-color: #fff;
+  background-color: #f4f4f4;
 }
 /* =======================================Trang Linh Kiện================================================= */
 .Asus img {
