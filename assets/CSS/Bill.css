@@ -35,7 +35,6 @@ input {
   padding-top: 50px;
 }
 .text {
-
   font-size: 40px;
   font-weight: bold;
 }
@@ -48,9 +47,7 @@ table {
 table thead tr th:first-child {
   text-align: left;
 }
-table tr td 
-{
-
+table tr td {
   border-bottom: 1px solid #ddd;
   padding: 14px 0;
 }
@@ -71,7 +68,7 @@ table tbody tr td:last-child
   {
     text-align: right;
   } */
-.text{
+.text {
   display: inline-block;
   padding: 5px 20px;
   font-size: 50px;
@@ -82,18 +79,15 @@ table tbody tr td:last-child
   border-radius: 5px; /* Bo góc của button */
   margin: 0 auto;
 }
-.text1
-{
- margin: 0 auto; 
- display: flex; 
+.text1 {
+  margin: 0 auto;
+  display: flex;
 }
-table
-{
+table {
   border: 1px solid #ddd;
   padding: 4%;
 }
-.head
-{
+.head {
   display: inline-block;
   padding: 5px 20px;
   font-size: 20px;
@@ -104,9 +98,22 @@ table
   border-radius: 5px; /* Bo góc của button */
   margin: 0 auto;
 }
-.body
+.bill2
 {
-  height: 500px;
-  width: 970px;
+  height: 40px;
+  width: 50px;
   overflow-y: scroll;
+}
+
+.price
+{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #1764a7; /* Màu nền của button */
+  text-align: center;
+  text-decoration: none; /* Loại bỏ gạch chân của thẻ a */
+  border-radius: 5px; /* Bo góc của button */
+  /* margin: 0 auto; */
 }
