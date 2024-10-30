@@ -98,16 +98,14 @@ table {
   border-radius: 5px; /* Bo góc của button */
   margin: 0 auto;
 }
-.bill2
-{
+.bill2 {
   height: 40px;
   width: 50px;
   overflow-y: scroll;
 }
 
-.price
-{
-  display: inline-block;
+.pprice {
+  display: inline;
   padding: 10px 20px;
   font-size: 20px;
   color: white;
@@ -116,4 +114,13 @@ table {
   text-decoration: none; /* Loại bỏ gạch chân của thẻ a */
   border-radius: 5px; /* Bo góc của button */
   /* margin: 0 auto; */
+  cursor: pointer;
 }
+.pprice:hover {
+  background-color: rgb(21, 93, 219);
+}
+.price {
+  display: flex;
+  margin: 20px 650px;
+}
+
