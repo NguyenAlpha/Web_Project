@@ -173,39 +173,7 @@ input[type="radio"]#slide3:checked ~ .navigation label[for="slide3"] {
     margin-left: 5%;
     margin-right: 15%;
 }
-@media (width < 700) {
-    .product-main-left {
-        justify-content: left;
-        margin-left: 5%;
-        width: 20%;
-        height: 25%;
-    }
-    .swiper-container {
-        margin-left: 5%;
-        width: 20%;
-        height: 25%;
-    }
-    .swiper-wrapper {
-        margin-left: 5%;
-        width: 20%;
-        height: 25%;
-    }
-    .slider {
-        margin-left: 5%;
-        width: 20%;
-        height: 25%;
-    }
-    .product-description {
-        margin-left: 5%;
-        width: 20%;
-        height: 25%;
-    }
-    .slides {
-        width: 20%;
-        height: 25%;
-    }
-    .slide img {
-        width: 20%;
-        height: 25%;
-    }
+label svg {
+    width: 16px;
+    height: 16px;
 }
