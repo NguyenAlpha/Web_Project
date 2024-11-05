@@ -16,10 +16,11 @@ body {
 }
 .product-name {
     display: flex;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 10px;
     margin-left: 15%;
+    color: yellowgreen;
 }
 body {
     display: inline-flexbox;
@@ -225,6 +226,9 @@ input[type="radio"]#slide3:checked ~ .navigation label[for="slide3"] {
     transform: scale(1.05);
     border-color: #ff6600;
 }
+.product-variety-option:focus {
+    outline: 1px solid #ff6600; 
+}
 .ad1 img{
     width: 100%;
     border: 1px solid #ccc;
@@ -273,7 +277,8 @@ input[type="radio"]#slide3:checked ~ .navigation label[for="slide3"] {
 .fa-cart-plus:hover {
     background-color: rgba(66, 234, 36, 0.8);
 }
-label svg {
-    width: 15px;
-    height: 15px;
+.fa-cart-plus::before {
+    content: "\f217";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;       
 }
