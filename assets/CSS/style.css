@@ -39,7 +39,6 @@ a {
   align-items: center;
 }
 
-
 .muc-dau__item {
   padding: 10px;
   color: #151c25;
@@ -83,8 +82,8 @@ a {
   display: flex;
   position: relative;
 }
-.register{
-  display:flex;
+.register {
+  display: flex;
   position: relative;
 }
 .fa-angle-down {
@@ -162,7 +161,6 @@ a {
   justify-content: space-between;
 }
 
-
 .header .nav {
   background-color: #f4f4f4;
 }
@@ -197,14 +195,11 @@ a {
   width: 150px;
 }
 /* ======================================Giỏ hàng====================================== */
-.nut
-{
+.nut {
   display: flex;
   margin: 0 auto;
-  
 }
-.button
-{
+.button {
   /* display: inline-block; */
   padding: 10px 20px;
   font-size: 16px;
@@ -214,10 +209,8 @@ a {
   text-decoration: none; /* Loại bỏ gạch chân của thẻ a */
   border-radius: 5px; /* Bo góc của button */
   margin: 0 auto;
-
 }
-.button:hover
-{
+.button:hover {
   background-color: #0e4779;
   color: white;
 }
@@ -260,9 +253,6 @@ a {
   border-radius: 10px;
   width: 100%;
 }
-
-
-
 
 .Laptop {
   width: 500px;
