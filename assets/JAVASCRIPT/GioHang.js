@@ -19,6 +19,9 @@ btn.forEach(function (element, index) {
     addcart(productImg, productName, productPrice);
   });
 });
-
+btn.addcart(productImg, productName, productPrice);
+{
+  productImg.addEventListener("tr");
+}
 
 // ==================================Tổng tiền===========================
