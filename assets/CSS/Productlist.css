@@ -1,0 +1,56 @@
+img {
+  height: 200px;
+  display: flex;
+}
+.note {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.oldprice {
+  font-size: 19px;
+  text-decoration: line-through;
+  color: gray;
+  display: flex;
+  background-color: #fff;
+}
+.newprice {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  display: flex;
+  background-color: white;
+}
+.note {
+  display: flex;
+  background-color: white;
+}
+/* .product
+{
+    background-color: rgb(174, 168, 168);
+    
+} */
+.product {
+  display: flex;
+  background-color: #fff;
+}
+img:hover {
+  font-size: 3000px;
+  cursor: pointer;
+}
+.item {
+  display: block;
+}
+.product {
+  display: flex;
+  margin: 0 100px;
+}
+.official {
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  /* margin: 0 170px; */
+}
+.product {
+  background-color: rgb(223, 220, 220);
+}
+
