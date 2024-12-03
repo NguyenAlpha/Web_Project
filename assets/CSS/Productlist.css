@@ -1,6 +1,8 @@
 img {
   height: 200px;
   display: flex;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .note {
   font-size: 20px;
@@ -19,6 +21,7 @@ img {
   font-weight: bold;
   display: flex;
   background-color: white;
+  /* border-radius: 15px; */
 }
 .note {
   display: flex;
@@ -53,4 +56,3 @@ img:hover {
 .product {
   background-color: rgb(223, 220, 220);
 }
-
