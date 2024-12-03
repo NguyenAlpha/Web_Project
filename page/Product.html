@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Sản Phẩm</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="../assets/CSS/product.css" />
     <link rel="stylesheet" href="/assets/CSS/style.css" />
     <link rel="stylesheet" href="/assets/CSS/header_responsive.css" />
@@ -206,44 +207,272 @@
       </div>
     </header>
     <hr />
-    <div class="product-container">
-      <div class="product-main-left">
-        <div class="product-gallery">
-          <div class="product-gallery-detail">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="slider">
-                  <!-- Radio buttons as controls -->
-                  <input type="radio" name="slider" id="slide1" checked />
-                  <input type="radio" name="slider" id="slide2" />
-                  <input type="radio" name="slider" id="slide3" />
+=======
+    <!-- reset css -->
+    <link rel="stylesheet" href="/assets/CSS/reset.css" />
 
-                  <!-- Slide images -->
-                  <div class="slides">
-                    <div class="slide" id="s1">
-                      <img
-                        src="../assets/Accessory/Laptop+PC/Acer Predator Helios Neo 16/1.jpg"
-                        alt="Product Image 1"
-                      />
+    <!-- font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Sen:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link The iconic SVG by font-awesome and https://fontawesome.com/icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- link file style css -->
+    <link rel="stylesheet" href="/assets/CSS/style.css" />
+
+    <link rel="stylesheet" href="/assets/CSS/header_responsive.css" />
+
+    <link rel="stylesheet" href="../assets/CSS/product.css">
+</head>
+<body>
+    <header class="header fixed">
+        <div class="main-content">
+          <div class="body-header">
+            <!-- logo -->
+            <div class="logo">
+              <a href="/index.html">
+                <img src="/assets/img/LOGO DEMO (1).svg" alt="LOGO DEMO" />
+              </a>
+            </div>
+  
+            <!-- search -->
+            <div class="search">
+              <input type="text" placeholder="Mua gì hôm nay?" required />
+              <button type="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+  
+              <!-- Tablet/mobile header mục đầu -->
+              <div class="mobile-header">
+                <input
+                  type="checkbox"
+                  name="menu-checkbox"
+                  id="menu-checkbox"
+                  class="menu-checkbox"
+                  hidden
+                />
+                <label for="menu-checkbox">
+                  <i class="fa-solid fa-bars"></i>
+                </label>
+                <label for="menu-checkbox" class="overlay"></label>
+  
+                <!-- menu-drawer -->
+                <div class="menu-drawer menu-drawer--align">
+                  <!-- mục đầu -->
+                  <div class="muc-dau">
+                    <!-- Lùi lại -->
+                    <label for="menu-checkbox">
+                      <i class="fa-regular fa-circle-xmark"></i>
+                    </label>
+  
+                    <!-- liên hệ -->
+                    <a class="muc-dau__item" href="tel:0328989480">
+                      <i class="fa-solid fa-phone"></i>
+                      <span> Hotline</span>
+                    </a>
+  
+                    <!-- đăng nhập -->
+                    <div class="login">
+                      <div class="login--visible">
+                        <a class="muc-dau__item" href="/page/login.html">
+                          <i class="fa-solid fa-right-to-bracket"></i>
+                          <span>Tài khoản</span>
+                          <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                      </div>
+  
+                      <ul class="login__list">
+                        <li class="login__item">
+                          <a class="muc-dau__item" href="/page/login.html"
+                            >Đăng nhập</a
+                          >
+                        </li>
+                        <li class="login__item">
+                          <a class="muc-dau__item" href="/page/register.html"
+                            >Đăng ký</a
+                          >
+                        </li>
+                      </ul>
                     </div>
-                    <div class="slide" id="s2">
-                      <img
-                        src="../assets/Accessory/Laptop+PC/Acer Predator Helios Neo 16/2.jpg"
-                        alt="Product Image 2"
-                      />
-                    </div>
-                    <div class="slide" id="s3">
-                      <img src="" alt="Product Image 3" />
-                    </div>
-                  </div>
-                  <div class="navigation">
-                    <label for="slide1" class="nav-dot"></label>
-                    <label for="slide2" class="nav-dot"></label>
-                    <label for="slide3" class="nav-dot"></label>
+  
+                    <!-- giỏ hàng -->
+                    <a class="muc-dau__item gio-hang" href="/page/Bill.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>Giỏ hàng</span>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+  
+            <!-- mục đầu -->
+            <div class="muc-dau">
+              <!-- liên hệ -->
+              <a class="muc-dau__item" href="tel:0328989480">
+                <i class="fa-solid fa-phone"></i>
+                <span> Hotline</span>
+              </a>
+  
+              <!-- đăng nhập -->
+              <div class="login">
+                <a class="muc-dau__item" href="/page/login.html">
+                  <i class="fa-solid fa-right-to-bracket"></i>
+                  <span>Tài khoản</span>
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+  
+                <ul class="login__list">
+                  <li class="login__item">
+                    <a class="muc-dau__item" href="/page/login.html">Đăng nhập</a>
+                  </li>
+                  <li class="login__item">
+                    <a class="muc-dau__item" href="/page/register.html"
+                      >Đăng ký</a
+                    >
+                  </li>
+                </ul>
+              </div>
+  
+              <!-- giỏ hàng -->
+              <a class="muc-dau__item gio-hang" href="/page/Bill.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Giỏ hàng</span>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- NAV -->
+        <div class="nav">
+          <div class="main-content">
+            <nav class="header--nav">
+              <ul class="header--nav-list">
+                <li>
+                  <a href="./assets/Accessory/Laptop+PC/Laptop+PC.html">
+                    <i class="fa-solid fa-laptop"></i>
+                    <span class="header--nav__utilities">Laptop</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-display"></i>
+                    <span class="header--nav__utilities">Màn hình</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-tachograph-digital"></i>
+                    <span class="header--nav__utilities">Main</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-microchip"></i>
+                    <span class="header--nav__utilities">CPU</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-memory"></i>
+                    <span>RAM </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-hard-drive"></i>
+                    <span>Ổ cứng</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-sd-card"></i>
+                    <span>Thẻ nhớ</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-car-battery"></i>
+                    <span>Nguồn</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-computer-mouse"></i>
+                    <span>Chuột</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-keyboard"></i>
+                    <span>Bàn phím</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>Tai nghe</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+        <div class="product-name">
+            <h1>Laptop Lenovo LOQ 15IAX9 83GS001SVN </h1>
+        </div>
+    <hr>
+>>>>>>> 5d0a39df168331bdac8c031f745c466565657704
+    <div class="product-container">
+        <div class="product-main-left">
+            <div class="product-gallery">
+                <div class="product-gallery-detail">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="slider">
+                                <!-- Radio buttons as controls -->
+                                <input type="radio" name="slider" id="slide1" checked>
+                                <input type="radio" name="slider" id="slide2">
+                                <input type="radio" name="slider" id="slide3">
+                                <input type="radio" name="slider" id="slide4">
+                                <!-- Slide images -->
+                                <div class="slides">
+                                    <div class="slide" id="s1">
+                                        <img src="../assets/Accessory/Laptop+PC/Laptop Lenovo LOQ 15IAX9 83GS001SVN/1.jpg" alt="Product Image 1">
+                                    </div>
+                                    <div class="slide" id="s2">
+                                        <img src="../assets/Accessory/Laptop+PC/Laptop Lenovo LOQ 15IAX9 83GS001SVN/2.jpg" alt="Product Image 2">
+                                    </div>
+                                    <div class="slide" id="s3">
+                                        <img src="../assets/Accessory/Laptop+PC/Laptop Lenovo LOQ 15IAX9 83GS001SVN/3.jpg " alt="Product Image 3">
+                                    </div>
+                                    <div class="slide" id="s4">
+                                      <img src="../assets/Accessory/Laptop+PC/Laptop Lenovo LOQ 15IAX9 83GS001SVN/4.jpg " alt="Product Image 3">
+                                  </div>
+                                </div>
+                                <div class="navigation">
+                                    <label for="slide1" class="nav-dot"></label>
+                                    <label for="slide2" class="nav-dot"></label>
+                                    <label for="slide3" class="nav-dot"></label>
+                                    <label for="slide4" class="nav-dot"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
             <<<<<<< HEAD
           </div>
         </div>
@@ -258,6 +487,20 @@
           <div class="product-description">
             <div class="box-title">
               <h2>Thông tin sản phẩm</h2>
+=======
+            <div class="product-description">
+                <div class="box-title">
+                    <h2>Thông tin sản phẩm</h2>
+                </div>
+                <div class="product-description-detail">
+                    <li>- CPU: Intel® Core™ i5-12450HX (2.40GHz up to 4.40GHz, 12MB Cache)</li>
+                    <li>- Ram: 12GB DDR5 4800MHz (2 slots, up to 32GB)</li>
+                    <li>- Ổ cứng: 512GB SSD M.2 2242 PCIe® 4.0x4 NVMe®</li>
+                    <li>- VGA: NVIDIA GeForce RTX™ 2050 4GB GDDR6</li>
+                    <li>- Display: 15.6inch FHD (1920x1080) IPS, 300nits, Anti-glare, 100% sRGB, 144Hz, G-SYNC®</li>
+                    <li>- Bảo hành: 24 tháng chính hãng Lenovo Việt Nam</li>
+                </div>
+>>>>>>> 5d0a39df168331bdac8c031f745c466565657704
             </div>
             <div class="product-description-detail">
               Mới, đầy đủ phụ kiện từ nhà sản xuất
@@ -265,6 +508,7 @@
           </div>
         </div>
         <div class="product-main-right">
+<<<<<<< HEAD
           <div class="product-price">
             <div class="product-price-detail">25,000,000đ</div>
             <div class="product-variety">
@@ -279,9 +523,30 @@
                 <div class="product-variety-option" tabindex="0">
                   <div class="color-title">Trắng</div>
                   <div class="color-price">29,099,999đ</div>
+=======
+            <div class="product-price">
+                <div class="product-price-detail">
+                  17.790.000đ
+                </div>
+                <div class="product-variety">
+                    <div class="product-variety-title">
+                        <h3>Sản phẩm cùng nhóm</h3>
+                    </div>
+                    <div class="product-variety-box">
+                        <div class="product-variety-option" tabindex="0">
+                            <div class="color-title">i5-12450HX/RTX™ 3050</div>
+                            <div class="color-price">20.390.000đ</div>
+                        </div>
+                        <div class="product-variety-option" tabindex="0">
+                            <div class="color-title">i5-12450HX/RTX™ 4050<div>
+                            <div class="color-price">24.190.000đ</div>
+                        </div>
+                    </div>
+>>>>>>> 5d0a39df168331bdac8c031f745c466565657704
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
           </div>
           <div class="ad1">
             <img
@@ -307,59 +572,34 @@
             </button>
           </div>
           >>>>>>> 96629e637512c1601a94bfce24d0cf41730ebd9d
+=======
         </div>
-      </div>
-      <div class="product-main-right">
-        <div class="product-price">
-          <div class="product-price-detail">25,000,000đ</div>
-          <div class="product-variety">
-            <div class="product-variety-title">
-              <h2>Chọn màu của sản phẩm</h2>
+            <div class="ad1">
+                <img class= "ad1-img" src="../assets/img/back-to-school.png" alt="back-to-school">
             </div>
-            <div class="product-variety-box">
-              <div class="product-variety-option">
-                <div class="color-title">Đen</div>
-                <div class="color-price">29,099,999đ</div>
-              </div>
-              <div class="product-variety-option">
-                <div class="color-title">Trắng</div>
-                <div class="color-price">29,099,999đ</div>
-              </div>
+            <div class="promotion-gift">
+                <div class="promotion-title">
+                    <h3>Khuyến mãi</h3>
+                </div>
+                <div class="promotion-gifts">
+                    <p>
+                      <li>- Balo + Chuột DareU LM130s Black + Bàn di chuột</li>
+                      <li>- Tặng 300.000Đ khi mua kèm Màn hình di động Viewsonic TD1655 cho tất cả các khách hàng mua mới hoặc từng mua laptop tại shop ---> Giá chỉ còn 5.990.000Đ</li>
+                      <li>- Hỗ trợ 50% khi nâng cấp thêm 1 tháng 12GB với giá 599.000Đ áp dụng cho 50 khách đầu tiên từ ngày 14/11 - 30/11/2024.</li>
+                      <li>- Hỗ trợ miễn phí cài đặt phần mềm + vệ sinh máy trọn đời tại shop</li>
+                    </p>
+                </div>
             </div>
-          </div>
+            <div class="buy-button">
+                <button class="buy-now">
+                    <h4>Mua ngay</h4>
+                </button>
+                <button class="fa-cart-plus">
+                    <h4>Thêm vào giỏ hàng</h4>
+                </button>
+            </div>
+>>>>>>> 5d0a39df168331bdac8c031f745c466565657704
         </div>
-        <div class="ad1">
-          <img
-            class="ad1-img"
-            src="../assets/img/back-to-school.png"
-            alt="back-to-school"
-          />
-        </div>
-        <div class="promotion-gift">
-          <div class="promotion-title">
-            <h2>Khuyến mãi</h2>
-          </div>
-          <div class="promotion-gifts">
-            <p>joahjdoiahoiadhp</p>
-          </div>
-        </div>
-        <div class="buy-button">
-          <button class="buy-now">
-            <i class="fa-solid fa-cart-shopping">Mua ngay</i>
-          </button>
-          <button class="fa-cart-plus">
-            <i class="fa-solid fa-cart-plus" id="fa-cart-plus"></i>
-            <label for="fa-cart-plus"
-              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path
-                  d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
-                /></svg
-            ></label>
-            <span>Thêm vào giỏ hàng</span>
-          </button>
-        </div>
-      </div>
     </div>
-  </body>
+</body>
 </html>
