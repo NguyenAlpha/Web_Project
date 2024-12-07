@@ -39,30 +39,30 @@
         <div class="main-content">
             <div class="box-heading"><h2>Thông tin tài khoản</h2></div>
             <div class="form-line">
-                <label style="margin-left: 2%; margin-top: 3.5%; margin-bottom: 1%; margin-right: 1%; width: 25%; height: 5%;">Họ tên</label>
+                <label class="line-name">Họ tên</label>
                 <div class="form-input-line">
                     <input required type="text" id="customer-name" name="fullname" value="Hà" >
                 </div>
             </div>
             <div class="form-line">
-                <label style="margin: 2%; margin-right: 1%; width: 25%; height: 5%; ">Giới tính</label>
-                <div class="form-input-line">
-                    <input type="checkbox" name="gender" id="gender">
+                <label class="line-name">Giới tính</label>
+                <div class="form-input-line" style="margin: 1%; justify-content: normal;">
+                    <input type="checkbox" name="gender" id="gender" class="gender-checkbox">
                     Nam
-                    <input type="checkbox" name="gender" id="gender">
+                    <input type="checkbox" name="gender" id="gender" class="gender-checkbox">
                     Nữ
                 </div>
             </div>
             <div class="form-line">
-                <label style="margin: 2%; margin-right: 1%; width: 25%; height: 5%;">Số điện thoại</label>
+                <label class="line-name">Số điện thoại</label>
                 <input required="number" type="text" placeholder="1234567890">
             </div>
             <div class="form-line">
-                <label style="margin: 2%; margin-right: 1%; width: 25%; height: 5%;">Email</label>
+                <label class="line-name">Email</label>
                 <input required type="text" placeholder="@email.com">
             </div>
             <div class="form-line" style="display: flex; justify-content: center; width: 100%;">
-                <button type="submit" class="save-change" onclick="">Lưu Thay Đổi</button>
+                <button type="submit" class="save-change" onclick="submitForm()">Lưu Thay Đổi</button>
             </div>
         </div>
     </div>
