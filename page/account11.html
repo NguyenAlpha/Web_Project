@@ -3,41 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account1</title>
+    <title>Tài khoản</title>
 
     <link rel="stylesheet" href="../assets/CSS/account.css">
 
 </head>
 <body>
-    <div class="account_container">
-        <div class="side_bar">
-            <div class="Block_item">
+    <div class="account-container">
+        <div class="side-bar">
+            <div class="Block-item">
                 <div class="item">
-                    <div class="box_icon"></div>
-                    <li><a href="../page/account11.html" class="item_name">Trang chủ</a></li>
+                    <div class="box-icon"></div>
+                    <li><a href="../page/account11.html" class="item-name">Trang chủ</a></li>
                 </div>
             </div>
-            <div class="Block_item">
+            <div class="Block-item">
                 <div class="item">
                     <div class="box_icon"></div>
-                    <li><a href="../page/account12.html" class="item_name">Sửa thông tin tài khoản</a></li>
+                    <li><a href="../page/account12.html" class="item-name">Địa chỉ</a></li>
                 </div>
             </div>
-            <div class="Block_item">
+            <div class="Block-item">
                 <div class="item">
                     <div class="box_icon"></div>
-                    <li><a href="../page/account13.html" class="item_name">Lịch sử đơn hàng</a></li>
+                    <li><a href="../page/account13.html" class="item-name">Lịch sử đơn hàng</a></li>
                 </div>
             </div>
-            <div class="Block_item">
+            <div class="Block-item">
                 <div class="item">
-                    <div class="box_icon"></div>
-                    <li><a href="../index.html" class="item_name">Đăng xuất</a></li>
+                    <div class="box-icon"></div>
+                    <li><a href="../index.html" class="item-name">Đăng xuất</a></li>
                 </div>
             </div>
         </div>
         <div class="main-content">
-            <div></div>
+            <div class="box-heading"><h2>Thông tin tài khoản</h2></div>
+            <div class="form-line">
+                <label style="margin-left: 2%; margin-top: 3.5%; margin-bottom: 1%; margin-right: 1%; width: 25%; height: 5%;">Họ tên</label>
+                <div class="form-input-line">
+                    <input required type="text" id="customer-name" name="fullname" value="Hà" >
+                </div>
+            </div>
+            <div class="form-line">
+                <label style="margin: 2%; margin-right: 1%; width: 25%; height: 5%; ">Giới tính</label>
+                <div class="form-input-line">
+                    <input type="checkbox" name="gender" id="gender">
+                    Nam
+                    <input type="checkbox" name="gender" id="gender">
+                    Nữ
+                </div>
+            </div>
+            <div class="form-line">
+                <label style="margin: 2%; margin-right: 1%; width: 25%; height: 5%;">Số điện thoại</label>
+                <input required="number" type="text" placeholder="1234567890">
+            </div>
+            <div class="form-line">
+                <label style="margin: 2%; margin-right: 1%; width: 25%; height: 5%;">Email</label>
+                <input required type="text" placeholder="@email.com">
+            </div>
+            <div class="form-line" style="display: flex; justify-content: center; width: 100%;">
+                <button type="submit" class="save-change" onclick="">Lưu Thay Đổi</button>
+            </div>
         </div>
     </div>
 </body>
