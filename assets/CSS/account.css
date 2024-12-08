@@ -7,11 +7,11 @@
     background-color: #f9f9f9;
 }
 .account-container{ 
-    margin: 20%;
+    margin: 10%;
     margin-top: 10%;
     display: flex;
     justify-content: space-evenly;
-    width: 60%;
+    width: 80%;
 }
 .side-bar{
     display: flex;
@@ -20,6 +20,7 @@
     width: 35%;
     height: 40%;
     margin: 0;
+    margin-right: 5%;
 }
 .side-bar li {
     list-style: none; 
@@ -27,7 +28,10 @@
     padding: 0;
 }
 .Block-item{
+    border: 2px solid #ccc;
     margin: 5%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .item{
     width: 100%;
@@ -135,20 +139,17 @@ button.save-change{
     }
 }
 .address-update-container {
-    width: 400px;
+    width: 65%;
     background: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
 }
-h2 {
-    color: #333;
-}
-
 h3 {
     display: flex;
     justify-content: flex-start;
+    margin-left: 2%;
     color: #555;
 }
 .form-group {
@@ -207,6 +208,195 @@ button.submit-btn {
 button.submit-btn:hover {
     background-color: #cc0000;
 }
-option{
-    transition-delay: 5s;
+.product-history{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 65%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.filter-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.filter-option {
+    margin: 1%;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.filter-option:hover {
+    background-color: #f1f1f1;
+    color: red;
+}
+
+.filter-option.active {
+    background-color: red;
+    color: white;
+}
+
+/* Danh sách đơn hàng */
+.order-list {
+    margin: 5%;
+}
+
+.order-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-item p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.order-item .status {
+    font-weight: bold;
+}
+
+.status.completed {
+    color: green;
+}
+
+.status.cancelled {
+    color: red;
+}
+
+.status.pending {
+    color: orange;
+}
+.order-header h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.order-header p {
+    font-size: 14px;
+    color: #666;
+}
+.main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.payment-info{
+    display: flex;
+    justify-content: space-evenly;
+}
+.buyer-info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.5%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.payment-method{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.payment-summary{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.info-group {
+    margin-bottom: 8px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.info-group span {
+    font-weight: bold;
+    color: #333;
+}
+.info-type{
+    position: relative;
+    width: 25%;
+}
+.information{
+    position: relative;
+    width: 75%;
+}
+.product-list {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.product-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+.product-item p {
+    margin: 0;
+}
+.order-summary {
+    font-size: 16px;
+    margin-top: 20px;
+}
+.order-summary .info-group {
+    justify-content: space-between;
+}
+.order-summary .info-group span:last-child {
+    font-weight: bold;
+}
+.order-summary .total-amount {
+    color: red;
+    font-size: 18px;
+}
+.return-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.return-btn button {
+    background-color: #e3f309;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.return-btn button:hover {
+    background-color: #c8d60a;
+}
+.main-info p{
+    margin: 1%;
+}
+.main-info span{
+    margin: 3%;
 }

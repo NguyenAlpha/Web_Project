@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tài khoản</title>
+    <title>Danh sách đơn hàng</title>
 
     <link rel="stylesheet" href="../assets/CSS/account.css">
 
 </head>
 <body>
-    <div class="account_container">
+    <div class="account-container">
         <div class="side-bar">
             <div class="Block-item">
                 <div class="item">
@@ -23,10 +23,10 @@
                     <li><a href="../page/account12.html" class="item-name">Địa chỉ</a></li>
                 </div>
             </div>
-            <div class="Block-item">
+            <div class="Block-item" style="background-color: #e3f309;">
                 <div class="item">
-                    <div class="box_icon"></div>
-                    <li><a href="../page/account13.html" class="item-name">Lịch sử đơn hàng</a></li>
+                    <div class="box_icon" ></div>
+                    <li><a href="../page/account13.html" class="item-name">Danh sách đơn hàng</a></li>
                 </div>
             </div>
             <div class="Block-item">
@@ -36,9 +36,61 @@
                 </div>
             </div>
         </div>
-        <div class="main-content">
-            <div></div>
+        <div class="product-history">
+            <div class="box-heading"><h2>Danh sách đơn hàng</h2></div>
+            <div class="filter-menu">
+                <a href="#" class="filter-option active" data-id="all">Tất cả</a>
+                <a href="#" class="filter-option" data-id="pending">Chờ xử lý</a>
+                <a href="#" class="filter-option" data-id="confirmed">Đã xác nhận</a>
+                <a href="#" class="filter-option" data-id="shipping">Đang giao hàng</a>
+                <a href="#" class="filter-option" data-id="completed">Thành công</a>
+                <a href="#" class="filter-option" data-id="cancelled">Đã hủy</a>
+            </div>
+            <!-- Danh sách đơn hàng -->
+            <div class="order-list">
+                <div class="order-item" data-status="completed">
+                    <p>Đơn hàng #7848883</p>
+                    <p>Sản phẩm: Tai nghe Bluetooth TWS AVA+</p>
+                    <p>Trạng thái: <span class="status completed">Đã nhận hàng</span></p>
+                    <p>Tổng tiền: 260.000đ</p>
+                    <a href="../page/product-purchased.html" class="btn-view">Xem chi tiết</a>
+                </div>
+                <div class="order-item" data-status="cancelled">
+                    <p>Đơn hàng #7645332</p>
+                    <p>Sản phẩm: Tai nghe Bluetooth DS200</p>
+                    <p>Trạng thái: <span class="status cancelled">Đã hủy</span></p>
+                    <p>Tổng tiền: 90.000đ</p>
+                    <a href="../page/product-purchased.html" class="btn-view">Xem chi tiết</a>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const filterOptions = document.querySelectorAll(".filter-option");
+            const orderItems = document.querySelectorAll(".order-item");
+
+            filterOptions.forEach(option => {
+                option.addEventListener("click", (e) => {
+                    e.preventDefault();
+
+                    // Xóa class "active" khỏi tất cả các nút
+                    filterOptions.forEach(opt => opt.classList.remove("active"));
+                    option.classList.add("active");
+
+                    const filter = option.getAttribute("data-id");
+
+                    // Lọc danh sách đơn hàng
+                    orderItems.forEach(item => {
+                        if (filter === "all" || item.getAttribute("data-status") === filter) {
+                            item.style.display = "block";
+                        } else {
+                            item.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
