@@ -89,3 +89,22 @@ thead th {
   color: #ffffff;
   cursor: pointer;
 }
+/* Kiểu CSS cho màn hình có chiều rộng tối đa 768px (tablet hoặc điện thoại) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    /* background-color: lightgreen; */
+  }
+}
+
+/* Kiểu CSS cho màn hình có chiều rộng tối đa 480px (điện thoại nhỏ) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+    /* background-color: lightcoral; */
+  }
+}
+.oldprice2
+{
+  text-decoration: none;
+}
