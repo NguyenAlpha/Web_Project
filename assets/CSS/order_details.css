@@ -1,0 +1,55 @@
+/*==============================================THUỘC TÍNH CHUNG===============================================*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+}
+
+a {
+    color: #151c25;
+}
+
+.main-content {
+    max-width: calc(100% - 200px);
+    height: 1000px;
+    margin: 0px auto;
+    padding-top: 150px;
+    background-color: rgb(244, 244, 244);
+}
+
+/*==============================================THUỘC RIÊNG===============================================*/
+.infor {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.infor-text {
+    padding: 6px;
+    color: #151c25;
+    font-weight: 500;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 4px;
+}
+
+.table {
+    margin: 0px auto;
+    width:65%
+}
+
+thead {
+    background-color: #06d6a0;
+    font-weight: 600;
+}
