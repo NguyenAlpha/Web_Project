@@ -18,7 +18,6 @@
 .sidebar {
     height: 100%;
     width: 15%;
-    position: fixed;
     left: 0;
     top: 0;
     z-index: 100;
@@ -520,7 +519,10 @@ section {
     background-color: #e74c3c; 
     color: white;
 }
-
+.add-button{
+    display: flex;
+    justify-content: flex-end;
+}
 /* Styling for Modal */
 .modal {
     position: fixed;
@@ -643,21 +645,54 @@ cursor: pointer;
 .product-table{
     margin-right: 10%;
 }
-/* Responsive Design */
-@media (max-width: 768px) {
-.product-management table,
-.customer-management table {
-    font-size: 12px;
-}
-
 .product-management thead th,
 .product-management tbody td,
 .customer-management thead th,
 .customer-management tbody td {
     padding: 8px 10px;
 }
-}
+
 .product-management img{
     width: 30%;
     height: 30%;
+}
+@media (min-width: 1024px) {
+    .sidebar{
+        position: fixed;
+    }
+}
+@media (max-width: 1024px) {
+    .admin-manager{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar{
+        display: flex;
+        width: 100%;
+        height: 25%;
+    }
+    .sidebar-task ul{
+        display: flex;
+    }
+    .sidebar-task li{
+        margin: 1%;
+        margin-right: 1%;
+    }
+    .main-content{
+        margin-left: 1%;
+    }
+}
+@media (max-width: 768px) {
+    .product-management table,
+    .customer-management table {
+        font-size: 12px;
+    }
+}
+@media (max-width: 468px){
+    h3{
+        display: none;
+    }
+    .main-content{
+        margin-left: 0;
+    }
 }

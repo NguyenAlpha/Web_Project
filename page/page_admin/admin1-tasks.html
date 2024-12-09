@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <div class="sidebar">
+   <div class="admin-manager">
+      <div class="sidebar">
       <div class="sidebar-menu">
         <h3 class="brand">
           <span class="ti-unlink"></span> 
@@ -49,20 +50,6 @@
           </li>
           <li>
             <a href="">
-              <span class="ti-time"></span>
-              <i class="fas fa-clock"></i>
-              <span>Timesheets</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="ti-book"></span>
-              <i class="fas fa-address-book"></i>
-              <span>Contacts</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
               <span class="ti-settings"></span>
               <i class="fas fa-user"></i>
               <span>Account</span>
@@ -74,7 +61,6 @@
    <div class="main-content">
     <h2>Quản lý sản phẩm</h2>
     <div class="product-management">
-      <button id="add-product-btn" style="width: 15%;">Thêm sản phẩm</button>
       <div class="product-table">
         <table>
           <thead>
@@ -99,6 +85,7 @@
           </tbody>
         </table>
       </div>
+      <div class="add-button"><button id="add-product-btn">Thêm sản phẩm</button></div>
     </div>
     
     <!-- Modal Thêm/Sửa Sản phẩm -->
@@ -127,6 +114,7 @@
         <button id="cancel-delete">Hủy</button>
       </div>
     </div>    
+   </div>
    </div>
 
    <!-- JavaScript -->
