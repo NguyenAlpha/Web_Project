@@ -108,3 +108,37 @@ thead th {
 {
   text-decoration: none;
 }
+div
+{
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .table-wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+}
+.table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
