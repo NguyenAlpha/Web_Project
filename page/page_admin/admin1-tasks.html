@@ -72,28 +72,33 @@
       </div>
    </div>
    <div class="main-content">
+    <h2>Quản lý sản phẩm</h2>
     <div class="product-management">
-      <h2>Quản lý sản phẩm</h2>
-      <button id="add-product-btn">Thêm sản phẩm</button>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Tên sản phẩm</th>
-            <th>Hình ảnh</th>
-            <th>Giá</th>
-            <th>Hành động</th>
-          </tr>
-        </thead>
-        <tbody id="product-list">
-          <!-- Các sản phẩm sẽ được thêm động vào đây -->
-           <td>14368</td>
-           <td>Laptop gaming Acer Aspire 5 A515 58GM 53PZ</td>
-           <td><img src="" alt="Ảnh"></td>
-           <td>15.490.000₫</td>
-           <td>Đã nhận hàng</td>
-        </tbody>
-      </table>
+      <button id="add-product-btn" style="width: 15%;">Thêm sản phẩm</button>
+      <div class="product-table">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tên sản phẩm</th>
+              <th>Hình ảnh</th>
+              <th>Giá</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody id="product-list">
+            <!-- Các sản phẩm sẽ được thêm động vào đây -->
+             <td>14368</td>
+             <td>Laptop gaming Acer Aspire 5 A515 58GM 53PZ</td>
+             <td><img src="../page_admin/images.jpg" alt=""></td>
+             <td>15.490.000₫</td>
+             <td>
+              <button onclick="editProduct(14368)">Sửa</button>
+              <button onclick="confirmDelete(14368)">Xóa</button>
+             </td>
+          </tbody>
+        </table>
+      </div>
     </div>
     
     <!-- Modal Thêm/Sửa Sản phẩm -->

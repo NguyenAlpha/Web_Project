@@ -507,17 +507,17 @@ section {
 }
 
 .product-management button.add-btn {
-    background-color: #4CAF50; /* Màu xanh lá */
+    background-color: #4CAF50; 
     color: white;
 }
 
 .product-management button.edit-btn {
-    background-color: #027581; /* Màu xanh dương */
+    background-color: #027581; 
     color: white;
 }
 
 .product-management button.delete-btn {
-    background-color: #e74c3c; /* Màu đỏ */
+    background-color: #e74c3c; 
     color: white;
 }
 
@@ -544,8 +544,8 @@ section {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.modal-content h2 {
-    margin-bottom: 20px;
+h2 {
+    margin-left: 5%;
     color: #333;
 }
 
@@ -621,7 +621,16 @@ display: none;
 float: right;
 cursor: pointer;
 }
-
+.product-management{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-table{
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+}
 .product-management button {
 margin: 10px 0;
 padding: 10px 15px;
@@ -631,7 +640,9 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 }
-
+.product-table{
+    margin-right: 10%;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
 .product-management table,
@@ -645,4 +656,8 @@ cursor: pointer;
 .customer-management tbody td {
     padding: 8px 10px;
 }
+}
+.product-management img{
+    width: 30%;
+    height: 30%;
 }
