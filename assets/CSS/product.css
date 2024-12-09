@@ -361,7 +361,7 @@ h4 {
         height: 50%;
     }
 }
-@media screen and (max-width: 1028px) {
+@media (max-width: 1028px) {
     .product-container{
         display: flex;
         flex-direction: column;
@@ -397,12 +397,12 @@ h4 {
         margin-left: 10%;
     }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .header--nav{
         display: none;
     }
 }
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
     .product-container{
         display: flex;
         flex-direction: column;
