@@ -117,27 +117,7 @@ button.save-change{
     transform: scale(1.05); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
-@media (max-width: 1024px){
-    .body{
-        display: flex;
-        flex-direction: column;
-    }
-    .account-container{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin-left: 10%;
-    }
-    .side-bar{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    .main-content{
-        width: 100%;
-        margin: 0;
-    }
-}
+
 .address-update-container {
     width: 65%;
     background: #f9f9f9;
@@ -399,4 +379,45 @@ button.submit-btn:hover {
 }
 .main-info span{
     margin: 3%;
+}
+@media (max-width: 1024px){
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+    .account-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .side-bar{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-right: 0;
+    }
+    .Block-item{
+        width: 25%;
+    }
+    .main-content{
+        width: 100%;
+        margin: 0;
+    }
+    .payment-info{
+        flex-direction: column;
+    }
+    .buyer-info{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+    .payment-method{
+        width: 100%;
+        margin-left: 0;
+    }
+    .payment-summary{
+        margin-top: 5%;
+    }
 }
