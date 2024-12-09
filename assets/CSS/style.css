@@ -18,10 +18,12 @@ a {
 }
 
 .main-content {
-  width: 1200px;
+  width: 80%;
   max-width: calc(100% - 20px);
   margin: 0px auto;
   text-decoration: none;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .logo img {
