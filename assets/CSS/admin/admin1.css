@@ -13,7 +13,8 @@
     box-sizing: border-box;
 }
 
-/* Sidebar Styles */
+
+
 .sidebar {
     height: 100%;
     width: 15%;
@@ -159,7 +160,7 @@
     border-radius: 50%;
 }
 
-/* Dashboard Cards */
+
 .dashboard-cards {
     display: flex;
     gap: 20px;
@@ -198,7 +199,9 @@
     grid-template-columns: 80% 20%;
     grid-column-gap: 12px;
 }
-.activity-card{
+.activity-card,
+.summary-card,
+.birthday-card {
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -284,6 +287,7 @@ td{
     height: 38px;
     width: 38px;
     border-radius: 50%;
+    margin-top: 10%;
     margin-left: -10px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -291,13 +295,216 @@ td{
     
 }
 .img-1 {
-    background-image: url('admin/img-avatar.jpg');
+    background-image: url('/assets/img/img-1.jpg');
 }
 
 .img-2 {
-    background-image: url('img/img-2.jpg');
+    background-image: url('/assets/img/img-2.jpg');
 }
 
 .img-3 {
-    background-image: url('img/img-3.jpg');
+    background-image: url('/assets/img/img-3.jpg');
 }
+.summary-card{
+    margin-bottom: 2%;
+}
+.summary-single{
+padding-right: 1%;
+display: flex;
+align-items: center;
+
+}
+.summary-single span{
+    font-size: 2%;
+    color:#777;
+  
+}
+.summary-card h5{
+    color: #53a949;
+    font-size: 100%;
+    margin-bottom: 2%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.summary-single small{
+    font-weight: 700;
+}
+.birthday-card{
+    display: flex;
+}
+.birthday-img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/img-2.jpg');
+    border: 3px solid #efefef
+    
+}
+/* General Styling */
+section {
+    margin: 1px;; /* Giảm khoảng cách giữa các section */
+    padding: 5px; /* Giảm khoảng cách trong mỗi section */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    font-size: 16px; /* Giảm kích thước tiêu đề */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px; /* Giảm khoảng cách dưới tiêu đề */
+    border-left: 5px solid #4CAF50;
+    padding-left: 10px;
+  }
+  
+  /* Sales Overview */
+  .sales-cards {
+    display: flex;
+    gap: 50px; /* Giảm khoảng cách giữa các thẻ */
+    justify-content: center;
+
+
+  }
+  
+  .sales-card {
+    flex: 1;
+    padding: 1px; /* Giảm khoảng cách trong thẻ */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    max-width: 300px; /* Giới hạn kích thước tối đa của thẻ */
+  }
+  
+  .sales-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sales-card h4 {
+    font-size: 14px; /* Giảm kích thước chữ tiêu đề thẻ */
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .sales-card p {
+    font-size: 18px; /* Giảm kích thước chữ số liệu */
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  /* General Table Styling */
+/* Styling for Product Management Table */
+.product-management table {
+    width: 80%; /* Giảm chiều rộng bảng xuống 80% */
+    max-width: 100%; /* Giới hạn chiều rộng tối đa của bảng */
+    border-collapse: collapse;
+    margin: 20px auto; /* Thêm margin tự động để căn giữa bảng */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng mờ */
+    border-radius: 8px; /* Bo góc bảng */
+    overflow: hidden; /* Đảm bảo góc không bị thừa */
+    margin-left: 16%;
+  }
+  
+  /* Styling for Header */
+  .product-management thead {
+    background: #f4f4f4; /* Màu nền */
+    color: #333; /* Màu chữ */
+    text-align: left;
+  }
+  
+  .product-management thead th {
+    padding: 12px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+  }
+  
+  /* Styling for Body */
+  .product-management tbody tr {
+    border-bottom: 1px solid #ddd; /* Đường gạch ngang */
+  }
+  
+  .product-management tbody tr:hover {
+    background: rgba(76, 175, 80, 0.1); /* Hiệu ứng hover */
+  }
+  
+  .product-management tbody td {
+    padding: 10px 8px; /* Giảm padding */
+    font-size: 14px;
+    color: #555; /* Màu chữ */
+  }
+  
+  .product-management tbody td:nth-child(4) {
+    text-transform: capitalize; /* Viết hoa chữ đầu */
+  }
+  
+  .product-management tbody td:last-child {
+    font-weight: bold;
+    color: #4CAF50; /* Màu xanh lá */
+  }
+  
+  /* Styling for Customer Management Table */
+  .customer-management table {
+    width: 80%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 16%;
+  }
+  
+  /* Styling for Header */
+  .customer-management thead {
+    background: #f4f4f4;
+    color: #333;
+    text-align: left;
+  }
+  
+  .customer-management thead th {
+    padding: 12px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  /* Styling for Body */
+  .customer-management tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .customer-management tbody tr:hover {
+    background: rgba(76, 175, 80, 0.1);
+  }
+  
+  .customer-management tbody td {
+    padding: 10px 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .customer-management tbody td:last-child {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-management table,
+    .customer-management table {
+      font-size: 12px;
+    }
+  
+    .product-management thead th,
+    .product-management tbody td,
+    .customer-management thead th,
+    .customer-management tbody td {
+      padding: 8px 10px;
+    }
+  }
+  
