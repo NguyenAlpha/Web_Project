@@ -6,6 +6,12 @@
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;
 }
+.get-back-button{
+    border: white;
+    background-color: white;
+    margin-left: 1%;
+    font-size: 250%;
+}
 .account-container{ 
     margin: 10%;
     margin-top: 10%;
@@ -397,6 +403,9 @@ button.submit-btn:hover {
         flex-direction: row;
         width: 100%;
         margin-right: 0;
+    }
+    .side-bar a{
+        font-size: 10px;
     }
     .Block-item{
         width: 25%;
