@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vie">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,6 +87,11 @@
         </thead>
         <tbody id="product-list">
           <!-- Các sản phẩm sẽ được thêm động vào đây -->
+           <td>14368</td>
+           <td>Laptop gaming Acer Aspire 5 A515 58GM 53PZ</td>
+           <td><img src="" alt="Ảnh"></td>
+           <td>15.490.000₫</td>
+           <td>Đã nhận hàng</td>
         </tbody>
       </table>
     </div>
@@ -118,6 +123,8 @@
       </div>
     </div>    
    </div>
+
+   <!-- JavaScript -->
    <script>
     const productList = []; // Dữ liệu sản phẩm
     let editingProduct = null; // Sản phẩm đang chỉnh sửa
@@ -165,7 +172,6 @@
         : '';
 
       const product = { id, name, price, image };
-
       if (editingProduct) {
         // Sửa sản phẩm
         const index = productList.findIndex((p) => p.id == id);
