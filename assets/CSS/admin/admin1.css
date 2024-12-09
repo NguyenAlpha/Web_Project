@@ -350,19 +350,21 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  h3 {
+  .product-management h3 {
     font-size: 16px; /* Giảm kích thước tiêu đề */
     font-weight: bold;
     color: #333;
     margin-bottom: 15px; /* Giảm khoảng cách dưới tiêu đề */
     border-left: 5px solid #4CAF50;
     padding-left: 10px;
+    margin-right: 54%;
   }
   
   /* Sales Overview */
   .sales-cards {
     display: flex;
-    gap: 50px; /* Giảm khoảng cách giữa các thẻ */
+    margin-left: 15%;
+    gap: 10px; /* Giảm khoảng cách giữa các thẻ */
     justify-content: center;
 
 
@@ -421,6 +423,7 @@ section {
     font-size: 14px;
     
   }
+
   
   /* Styling for Body */
   .product-management tbody tr {
@@ -476,6 +479,15 @@ section {
   .customer-management tbody tr {
     border-bottom: 1px solid #ddd;
   }
+  .customer-management h3{
+    font-size: 16px; /* Giảm kích thước tiêu đề */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px; /* Giảm khoảng cách dưới tiêu đề */
+    border-left: 5px solid #4CAF50;
+    padding-left: 10px;
+    margin-left: 16%;
+  }
   
   .customer-management tbody tr:hover {
     background: rgba(76, 175, 80, 0.1);
@@ -519,6 +531,7 @@ section {
     background-color: #e74c3c; 
     color: white;
 }
+
 .add-button{
     display: flex;
     justify-content: flex-end;
@@ -695,4 +708,7 @@ cursor: pointer;
     .main-content{
         margin-left: 0;
     }
+}
+.filterStatus{
+    margin-left: 16%;
 }
