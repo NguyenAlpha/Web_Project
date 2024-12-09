@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tài khoản</title>
+    <title>Địa chỉ</title>
 
     <link rel="stylesheet" href="../assets/CSS/account.css">
 
 </head>
 <body>
-    <div class="account_container">
+    <div class="account-container">
         <div class="side-bar">
             <div class="Block-item">
                 <div class="item">
                     <div class="box-icon"></div>
-                    <li><a href="../page/account11.html" class="item-name">Trang chủ</a></li>
+                    <li><a href="../page/account.html" class="item-name">Trang chủ tài khoản</a></li>
                 </div>
             </div>
-            <div class="Block-item">
+            <div class="Block-item" style="background-color: #e3f309;">
                 <div class="item">
                     <div class="box_icon"></div>
                     <li><a href="../page/account12.html" class="item-name">Địa chỉ</a></li>
@@ -26,7 +26,7 @@
             <div class="Block-item">
                 <div class="item">
                     <div class="box_icon"></div>
-                    <li><a href="../page/account13.html" class="item-name">Lịch sử đơn hàng</a></li>
+                    <li><a href="../page/account13.html" class="item-name">Danh sách đơn hàng</a></li>
                 </div>
             </div>
             <div class="Block-item">
@@ -36,9 +36,56 @@
                 </div>
             </div>
         </div>
-        <div class="main-content">
-            <div></div>
+        <div class="address-update-container">
+            <div class="box-heading"><h2>CẬP NHẬT ĐỊA CHỈ</h2></div>
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Nhập họ tên người nhận</label>
+                    <input type="text" id="fullname" placeholder="Họ và Tên">
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">Số điện thoại người nhận</label>
+                    <input required="number" id="phone-number" type="text" placeholder="1234567890">
+                </div>
+                <h3>Địa chỉ</h3>
+                <div class="form-group">
+                    <select id="city">
+                        <option value="" disabled selected>Chọn Tỉnh/Thành phố</option>
+                        <option value="1">TP. Hồ Chí Minh</option>
+                        <option value="2">Hà Nội</option>
+                    </select>
+                    <select id="district">
+                        <option value="" disabled selected>Chọn Quận/Huyện</option>
+                        <option value="1">Quận 1</option>
+                        <option value="2">Quận 2</option>
+                    </select>
+                    <select id="ward">
+                        <option value="" disabled selected>Chọn Phường/Xã</option>
+                        <option value="1">Phường 1</option>
+                        <option value="2">Phường 2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="address-details" placeholder="Số nhà, địa chỉ cụ thể">
+                </div>
+                <h3>Loại địa chỉ</h3>
+                <div class="form-group">
+                    <button type="button" class="address-type-btn" data-type="office">Văn phòng</button>
+                    <button type="button" class="address-type-btn selected" data-type="home">Nhà riêng</button>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">CẬP NHẬT</button>
+                </div>
+            </form>
         </div>
-    </div>
+    <script>
+        const addressTypeButtons = document.querySelectorAll('.address-type-btn');
+            addressTypeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    addressTypeButtons.forEach(btn => btn.classList.remove('selected'));
+                    button.classList.add('selected');
+                });
+            });
+    </script>
 </body>
 </html>

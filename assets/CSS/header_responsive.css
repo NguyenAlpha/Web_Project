@@ -18,7 +18,10 @@
   .search {
     width: 90%;
   }
-
+  .search-box{
+    margin-left: 5%;
+    width: 75%;
+  }
   .fa-bars {
     font-size: 35px;
   }

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/CSS/admin/admin1.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="admin-manager">
+      <div class="sidebar">
+      <div class="sidebar-menu">
+        <h3 class="brand">
+          <span class="ti-unlink"></span> 
+          <span>Dashboard</span>
+        </h3>
+        <span class="ti-menu-alt"></span>
+      </div>
+      <div class="sidebar-task">
+        <ul>
+          <li>
+            <a href="../page_admin/admin1.html">
+              <span class="ti-home"></span>
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="ti-face-smile"></span>
+              <i class="fas fa-users"></i> 
+              <span>Team</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="ti-agenda"></span>
+              <i class="fas fa-tasks"></i>
+              <span>Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="ti-clipboard"></span>
+              <i class="fas fa-briefcase"></i>
+              <span>Leave</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="ti-settings"></span>
+              <i class="fas fa-user"></i>
+              <span>Account</span>
+            </a>
+          </li>
+        </ul>  
+      </div>
+   </div>
+   <div class="main-content">
+    <h2>Quản lý sản phẩm</h2>
+    <div class="product-management">
+      <div class="product-table">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tên sản phẩm</th>
+              <th>Hình ảnh</th>
+              <th>Giá</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody id="product-list">
+            <!-- Các sản phẩm sẽ được thêm động vào đây -->
+             <td>14368</td>
+             <td>Laptop gaming Acer Aspire 5 A515 58GM 53PZ</td>
+             <td><img src="../page_admin/images.jpg" alt=""></td>
+             <td>15.490.000₫</td>
+             <td>
+              <button onclick="editProduct(14368)">Sửa</button>
+              <button onclick="confirmDelete(14368)">Xóa</button>
+             </td>
+          </tbody>
+        </table>
+      </div>
+      <div class="add-button"><button id="add-product-btn">Thêm sản phẩm</button></div>
+    </div>
+    
+    <!-- Modal Thêm/Sửa Sản phẩm -->
+    <div id="product-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="modal-title">Thêm sản phẩm</h3>
+        <form id="product-form">
+          <input type="hidden" id="product-id" />
+          <label for="product-name">Tên sản phẩm:</label>
+          <input type="text" id="product-name" required />
+          <label for="product-image">Hình ảnh:</label>
+          <input type="file" id="product-image" />
+          <label for="product-price">Giá:</label>
+          <input type="number" id="product-price" required />
+          <button type="submit">Lưu</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Modal Xác nhận Xóa -->
+    <div id="delete-modal" class="modal hidden">
+      <div class="modal-content">
+        <p>Bạn có chắc chắn muốn xóa sản phẩm này?</p>
+        <button id="confirm-delete">Xóa</button>
+        <button id="cancel-delete">Hủy</button>
+      </div>
+    </div>    
+   </div>
+   </div>
+
+   <!-- JavaScript -->
+   <script>
+    const productList = []; // Dữ liệu sản phẩm
+    let editingProduct = null; // Sản phẩm đang chỉnh sửa
+
+    // Mở modal
+    const openModal = (isEdit = false, product = {}) => {
+      const modal = document.getElementById('product-modal');
+      document.getElementById('modal-title').textContent = isEdit ? 'Sửa sản phẩm' : 'Thêm sản phẩm';
+      document.getElementById('product-id').value = isEdit ? product.id : '';
+      document.getElementById('product-name').value = isEdit ? product.name : '';
+      document.getElementById('product-price').value = isEdit ? product.price : '';
+      modal.classList.remove('hidden');
+    };
+
+    // Đóng modal
+    const closeModal = () => {
+      document.getElementById('product-modal').classList.add('hidden');
+    };
+
+    // Thêm sản phẩm vào danh sách
+    const addProductToList = (product) => {
+      const tbody = document.getElementById('product-list');
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${product.id}</td>
+        <td>${product.name}</td>
+        <td><img src="${product.image}" alt="Hình ảnh" width="50"></td>
+        <td>${product.price}</td>
+        <td>
+          <button onclick="editProduct(${product.id})">Sửa</button>
+          <button onclick="confirmDelete(${product.id})">Xóa</button>
+        </td>
+      `;
+      tbody.appendChild(row);
+    };
+
+    // Thêm sản phẩm
+    document.getElementById('product-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const id = document.getElementById('product-id').value || Date.now();
+      const name = document.getElementById('product-name').value;
+      const price = document.getElementById('product-price').value;
+      const image = document.getElementById('product-image').files[0]
+        ? URL.createObjectURL(document.getElementById('product-image').files[0])
+        : '';
+
+      const product = { id, name, price, image };
+      if (editingProduct) {
+        // Sửa sản phẩm
+        const index = productList.findIndex((p) => p.id == id);
+        productList[index] = product;
+        document.getElementById('product-list').innerHTML = '';
+        productList.forEach(addProductToList);
+        editingProduct = null;
+      } else {
+        // Thêm sản phẩm mới
+        productList.push(product);
+        addProductToList(product);
+      }
+
+      closeModal();
+    });
+
+    // Sửa sản phẩm
+    const editProduct = (id) => {
+      const product = productList.find((p) => p.id == id);
+      editingProduct = product;
+      openModal(true, product);
+    };
+
+    // Xóa sản phẩm
+    let productToDelete = null;
+    const confirmDelete = (id) => {
+      productToDelete = id;
+      document.getElementById('delete-modal').classList.remove('hidden');
+    };
+
+    document.getElementById('confirm-delete').addEventListener('click', () => {
+      productList.splice(
+        productList.findIndex((p) => p.id == productToDelete),
+        1
+      );
+      document.getElementById('product-list').innerHTML = '';
+      productList.forEach(addProductToList);
+      document.getElementById('delete-modal').classList.add('hidden');
+    });
+
+    document.getElementById('cancel-delete').addEventListener('click', () => {
+      productToDelete = null;
+      document.getElementById('delete-modal').classList.add('hidden');
+    });
+
+    // Đóng modal
+    document.querySelectorAll('.close-btn').forEach((btn) =>
+      btn.addEventListener('click', closeModal)
+    );
+
+    document.getElementById('add-product-btn').addEventListener('click', () => openModal(false));
+
+   </script>
+</body>
+</html>

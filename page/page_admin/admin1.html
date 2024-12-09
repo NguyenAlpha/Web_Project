@@ -1,81 +1,333 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vie">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- reset css -->
-    <link rel="stylesheet" href="/assets/CSS/reset.css"/>
-
-    <!-- font chữ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Sen:wght@700&display=swap" rel="stylesheet"/>
-
-    <!-- link The iconic SVG by font-awesome and https://fontawesome.com/icons-->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-    />
-
-    <!-- link css -->
-    <link rel="stylesheet" href="/assets/CSS/admin/admin.css">
-    <link rel="stylesheet" href="/assets/CSS/admin/admin1.css">
-
-    <title>Admin home page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/CSS/admin/admin1.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="root">
-        <nav class="nav">
-            <!-- logo -->
-            <div class="nav--logo">
-              <a href="/admin.html">
-                <img class="logo__img" src="/assets/img/LOGO DEMO (1).svg" alt="LOGO DEMO" />
-              </a>
+   <div class="sidebar">
+      <div class="sidebar-menu">
+        <h3 class="brand">
+          <span class="ti-unlink"></span> 
+          <span>Dashboard</span>
+        </h3>
+        <span class="ti-menu-alt"></span>
+      </div>
+      <div class="sidebar-task">
+        <ul>
+          <li>
+            <a href="../page_admin/admin1.html">
+              <span class="ti-home"></span>
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="ti-face-smile"></span>
+              <i class="fas fa-users"></i> 
+              <span>Team</span>
+            </a>
+          </li>
+          <li>
+            <a href="../page_admin/admin1-tasks.html">
+              <span class="ti-agenda"></span>
+              <i class="fas fa-tasks"></i>
+              <span>Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="ti-clipboard"></span>
+              <i class="fas fa-briefcase"></i>
+              <span>Leave</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="ti-time"></span>
+              <i class="fas fa-clock"></i>
+              <span>Timesheets</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="ti-book"></span>
+              <i class="fas fa-address-book"></i>
+              <span>Contacts</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="ti-settings"></span>
+              <i class="fas fa-user"></i>
+              <span>Account</span>
+            </a>
+          </li>
+        </ul>  
+      </div>
+   </div>
+   <div class="main-content">
+    <header>
+      <div class="navbar">
+        <div class="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#reports">Reports</a>
+          <a href="#settings">Settings</a>
+          <a href="#help">Help</a>
+        </div>
+        <div class="profile-section">
+          <span>Welcome, User</span>
+          <img src="/assets/images/profile.jpg" alt="Profile">
+        </div>
+      </div>
+      <div class="search-wrapper">
+        <span class="ti-search"></span>
+        <input type="search" placeholder="Search">
+      </div>
+      <div class="Social-icons">
+        <span class="ti-bell"></span>
+        <span class="ti-comment"></span>
+      </div>
+    </header>
+    <main>
+      <h2>Overview</h2>
+      <div class="dashboard-cards">
+        <div class="card-single">
+          <div class="card-body">
+            <span class="ti-briefcase"></span>
+            <div>
+              <i class="fas fa-credit-card"></i> 
+
+              <h5>Account Balance</h5>
+              <h4>$20,753.54</h4>
             </div>
+          </div>
+          <div class="card-footer">
+            <a href="">View all</a>
+          </div>
+        </div>
+        <div class="card-single">
+          <div class="card-body">
+          <span class="ti-reload"></span>
+          <div>
+            <i class="fas fa-clock"></i> 
 
-            <!-- quản lý người dùng -->
-            <a class="nav--item nav--user-management" href="assets/CSS/admin/admin1.css" >
-              <i class="fa-solid fa-user"></i>
-              <span>Quản lý người dùng</span>
-            </a>
+            <h5>Pending</h5>
+            <h4>$9,753.54</h4> 
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="">View all</a>
+        </div>
+      </div>
+      <div class="card-single">
+        <div class="card-body">
+          <span class="ti-checkbox"></span>
+          <div>
+            <i class="fas fa-check-circle"></i>
 
-            <!-- thêm sản phẩm -->
-            <a class="nav--item nav--add-produt" href="">
-              <i class="fa-solid fa-plus"></i>
-              <span>Thêm sản phẩm</span>
-            </a>
-
-            <!-- Sửa sản phẩm -->
-            <a class="nav--item nav--repair-produt" href="">
-              <i class="fa-solid fa-screwdriver-wrench"></i>
-              <span>Sửa sản phẩm</span>
-            </a>
-
-            <!-- Xóa sản phẩm -->
-            <a class="nav--item nav--delete-produt" href="">
-              <i class="fa-regular fa-trash-can"></i>
-              <span>Xóa sản phẩm</span>
-            </a>
-
-           
-
-        </nav>
-        <main class="main-content">
-            <!-- thông tin người quản trị -->
-            <div class="information">
-                <span>Quản trị: Huỳnh Trần Nhật Nguyên</span>
-            </div>
-
-            <!-- thêm, sửa  -->
-            <div class="fix">
-                
-            </div>
-
-        </main>
+            <h5>Processed</h5>
+            <h4>$10,753.54</h4>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="">View all</a>
+        </div>
+      </div>
     </div>
 
+    <section class="recent">
+      <div class="activity-grid">
+        
+      
+      <div class="activity-card">
+        <h3>Recent activity</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Team</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>App development</td>
+              <td>15 June, 2024</td>
+              <td>15 Sep , 2024</td>
+              <td class="td-team">
+                <div class="img-1"></div>
+                <div class="img-2"></div>
+                <div class="img-3"></div>
+              </td>
+              <td>
+                <span class="badge-success">Success</span>
+              </td>
+            </tr>
+            <tr>
+              <td>front end design</td>
+              <td>15 June, 2024</td>
+              <td>15 Sep , 2024</td>
+              <td class="td-team">
+                <div class="img-1"></div>
+                <div class="img-2"></div>
+                <div class="img-3"></div>
+              </td>
+              <td>
+                <span class="badge-warning">Process</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Server set up</td>
+              <td>15 June, 2024</td>
+              <td>15 Sep , 2024</td>
+              <td class="td-team">
+                <div class="img-1"></div>
+                <div class="img-2"></div>
+                <div class="img-3"></div>
+              </td>
+              <td>
+                <span class="badge-dumb">Success</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="summary">
+        <div class="summary-card">
+          <div class="summary-single">
+          <span class="ti-id-badge"></span>
+          <div>
+            <i class="fas fa-user-tie"></i>
+          <h5>196</h5>
+          <small>Number of staff</small>
+          </div>
+        </div>
+        <div class="summary-single">
+          <span class="ti-calendar"></span>
+          <div>
+            <i class="fas fa-suitcase"></i>
+          <h5>17</h5>
+          <small>Number of leave</small>
+          </div>
+        </div>  <div class="summary-single">
+          <span class="ti-face"></span>
+          <div>
+            <i class="fas fa-user-edit"></i>
+          <h5>11</h5>
+          <small>Profile update request</small>
+          </div>
+        </div>
+        </div>
+        <div class="birthday-card">
+          <div class="birthday-flex">
+            <div class="bday-img">
+              <div class="bday-info">
+                <h5>Nguyễn Huy Toàn</h5>
+                <small>Happy Birthday</small>
+                </div>
+          </div>
+              <div>
+                <button>
+                  <span class="ti-gift"></span>
+                  Wish him
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <section class="sales-overview">
+        <h3>Sales Overview</h3>
+        <div class="sales-cards">
+          <div class="sales-card">
+            <h4>Today's Sales</h4>
+            <p>$2,500</p>
+          </div>
+          <div class="sales-card">
+            <h4>Weekly Sales</h4>
+            <p>$17,800</p>
+          </div>
+          <div class="sales-card">
+            <h4>Top Product</h4>
+            <p>Laptop Dell Inspiron 15 3520 i5 1235U/8GB/512GB/KYHD/Win11</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Management -->
+      <section class="product-management">
+        <h3>Product Management</h3>
+        <table>
+          <thead>
+            <tr class="table-row">
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Stock</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-row">
+              <td class="table-cell">Laptop Dell Inspiron 15 3520 i5 1235U/8GB/512GB/KYHD/Win11</td>
+              <td class="table-cell">19,999,999đ</td>
+              <td class="table-cell">25</td>
+              <td class="table-cell">In Stock</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-cell">Laptop Asus Vivobook Go 15 E1504FA R5 7520U/16GB/512GB/Chuột/Win11 (NJ776W)</td>
+              <td class="table-cell">20,150,000</td>
+              <td class="table-cell">15</td>
+              <td class="table-cell">In Stock</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-cell">Laptop HP 15 fd0303TU i3 1315U/8GB/512GB/Win11 (A2NL4PA)</td>
+              <td class="table-cell">18,000,000</td>
+              <td class="table-cell">0</td>
+              <td class="table-cell">Out of Stock</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+      <!-- Customer Management -->
+      <section class="customer-management">
+        <h3>Customer Management</h3>
+        <table>
+          <thead>
+            <tr class="table-row">
+              <th>Customer Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Orders</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-row">
+              <td class="table-cell">John Doe</td>
+              <td class="table-cell">john.doe@example.com</td>
+              <td class="table-cell">+123456789</td>
+              <td class="table-cell">3</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-cell">Jane Smith</td>
+              <td class="table-cell">jane.smith@example.com</td>
+              <td class="table-cell">+987654321</td>
+              <td class="table-cell">5</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+    </section>
+    </main>
 </body>
 </html>

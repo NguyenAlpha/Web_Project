@@ -56,7 +56,9 @@ a {
   align-items: center;
   min-width: 200px;
 }
-
+.search-box{
+  width: 100%;
+}
 .search input {
   width: 100%;
   border: 1px solid #151c25;

@@ -21,7 +21,7 @@ body {
     height: max-content;   
     background-color: #fff;
     font-family: "Roboto", Arial, sans-serif;
-    margin: 80px;
+    margin: 15%;
 }
 
 #form-login {
@@ -113,9 +113,6 @@ body {
 .btn:hover {
     background-color: #9ba633;
 }
-.input-box :hover{
-    border: 2px solid #1bd60d;
-}
 /* Áp dụng hiệu ứng khi input nhận focus */
 .input-box input:focus {
     outline: none;
@@ -146,8 +143,23 @@ body {
 }
 
 @media (width <= 1000px ) {
+    .wrapper{
+        margin: 1%;
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
     .login-container {
-        width: 90%; /* Chiếm 90% chiều rộng trên màn hình nhỏ */
-        max-width: 350px; /* Giảm tối đa chiều rộng trên tablet */
+        width: 90%;
+        margin: 1%;
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%; 
+    }
+}
+@media screen and (max-width: 600px) {
+    .header--nav{
+        display: none;
     }
 }
