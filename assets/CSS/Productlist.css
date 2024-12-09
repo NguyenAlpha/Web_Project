@@ -104,12 +104,10 @@ thead th {
     /* background-color: lightcoral; */
   }
 }
-.oldprice2
-{
+.oldprice2 {
   text-decoration: none;
 }
-div
-{
+div {
   text-decoration: none;
 }
 @media (max-width: 768px) {
@@ -121,7 +119,7 @@ div
     padding: 10px;
   }
 }
-.table{
+.table {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,4 +139,18 @@ div
   align-items: center;
   text-align: center;
   overflow: hidden;
+}
+.header--nav-list li {
+  list-style: none;
+}
+.login__list li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.oldprice2 {
+  display: inline-flex;
+  font-size: 10px;
+  color: #000000;
 }

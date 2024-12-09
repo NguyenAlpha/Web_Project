@@ -56,7 +56,7 @@ a {
   align-items: center;
   min-width: 200px;
 }
-.search-box{
+.search-box {
   width: 100%;
 }
 .search input {
@@ -254,9 +254,22 @@ a {
 .huge-advertisement--img {
   margin-top: 16px;
   border-radius: 10px;
+  width: 120%;
+}
+.huge-advertisement--img2 {
+  margin-top: 16px;
+  border-radius: 10px;
   width: 100%;
 }
+.huge-advertisement {
+  width: 100%;
 
+  overflow: hidden;
+}
+.listimg {
+  display: flex;
+  /* width: 100%; */
+}
 .Laptop {
   width: 500px;
   margin: 0 auto;
@@ -283,7 +296,6 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.main-content
-{
+.main-content {
   text-decoration: none;
 }
