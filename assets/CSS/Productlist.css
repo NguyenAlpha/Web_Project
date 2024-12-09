@@ -1,0 +1,110 @@
+table {
+  width: 1000px;
+  border-collapse: collapse;
+  margin: 100px auto;
+  background-color: #f4f4f4;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+}
+
+thead th {
+  background-color: #f4f4f4;
+  font-size: 18px;
+}
+
+.note {
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center; /* Căn giữa ngang */
+  font-weight: bold; /* Tô đậm */
+  font-size: 20px; /* Tăng kích thước chữ */
+  margin: 0 auto; /* Đảm bảo nội dung không bị lệch */
+}
+
+.pic {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  background-color: white;
+}
+.oldprice {
+  font-size: 15px;
+  text-decoration: line-through;
+  /* Gạch ngang chữ */
+  color: #4e4d4d;
+  font-weight: 50px;
+}
+.newprice {
+  color: red;
+  font-size: 21px;
+  font-weight: bold;
+}
+.profile {
+  background-color: white;
+  border-radius: 15px;
+}
+.pic img:hover {
+  width: 210px;
+  height: auto;
+  display: block; /* Đảm bảo hình ảnh hiển thị đúng */
+  transition: all 0.3s ease-in-out; /* Tạo hiệu ứng mượt mà khi hover */
+}
+.pic {
+  overflow: hidden;
+  /*Ẩn hình ảnh vượt ra ngoài khung  */
+  text-align: center;
+}
+.giohang {
+  border: 2px solid #007bff;
+  display: inline-block;
+  border-radius: 15px;
+  padding: 7px;
+  color: #070707;
+}
+.giohang:hover {
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* Kiểu CSS cho màn hình có chiều rộng tối đa 768px (tablet hoặc điện thoại) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    /* background-color: lightgreen; */
+  }
+}
+
+/* Kiểu CSS cho màn hình có chiều rộng tối đa 480px (điện thoại nhỏ) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+    /* background-color: lightcoral; */
+  }
+}
+.oldprice2
+{
+  text-decoration: none;
+}

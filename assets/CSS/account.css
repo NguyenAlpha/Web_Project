@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+}
+.account-container{ 
+    margin: 10%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 35%;
+    height: 40%;
+    margin: 0;
+    margin-right: 5%;
+}
+.side-bar li {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+.Block-item{
+    border: 2px solid #ccc;
+    margin: 5%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.item{
+    width: 100%;
+    height: 20%;
+    margin: 5%;
+}
+.item-name{
+    color: black;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    text-decoration: none;
+    width: 80%;
+    font-size: 150%;
+    font-weight: 600;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 65%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.box-heading{
+    margin-left: 5%;
+}
+.form-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+}
+.line-name{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1%;
+    margin-bottom: 2%; 
+    width: 25%; 
+    height: 5%;
+}
+.form-input-line{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    width: 75%;
+    height: 100%;
+    flex-grow: auto;
+}
+input[type="text"],
+select {
+    width: 95%;
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.gender-checkboxs{
+    display: flex;
+    width: 25%;
+    margin: 1%;
+}
+button.save-change{
+    display: flex;
+    background-color: red;
+    color: white;
+    width: 25%;
+    height: 100%;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.save-change:hover {
+    background-color: #cc0000; 
+    color: #f1f1f1; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+@media (max-width: 1024px){
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+    .account-container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .side-bar{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .main-content{
+        width: 100%;
+        margin: 0;
+    }
+}
+.address-update-container {
+    width: 65%;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+h3 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+    color: #555;
+}
+.form-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button.address-type-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.address-type-btn.selected {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+button.address-type-btn:hover {
+    background-color: #ffe6e6;
+    border-color: red;
+    color: red;
+}
+
+button.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button.submit-btn:hover {
+    background-color: #cc0000;
+}
+.product-history{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 65%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.filter-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.filter-option {
+    margin: 1%;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.filter-option:hover {
+    background-color: #f1f1f1;
+    color: red;
+}
+
+.filter-option.active {
+    background-color: red;
+    color: white;
+}
+
+/* Danh sách đơn hàng */
+.order-list {
+    margin: 5%;
+}
+
+.order-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-item p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.order-item .status {
+    font-weight: bold;
+}
+
+.status.completed {
+    color: green;
+}
+
+.status.cancelled {
+    color: red;
+}
+
+.status.pending {
+    color: orange;
+}
+.order-header h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.order-header p {
+    font-size: 14px;
+    color: #666;
+}
+.main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.payment-info{
+    display: flex;
+    justify-content: space-evenly;
+}
+.buyer-info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.5%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.payment-method{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.payment-summary{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.info-group {
+    margin-bottom: 8px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.info-group span {
+    font-weight: bold;
+    color: #333;
+}
+.info-type{
+    position: relative;
+    width: 25%;
+}
+.information{
+    position: relative;
+    width: 75%;
+}
+.product-list {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.product-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+.product-item p {
+    margin: 0;
+}
+.order-summary {
+    font-size: 16px;
+    margin-top: 20px;
+}
+.order-summary .info-group {
+    justify-content: space-between;
+}
+.order-summary .info-group span:last-child {
+    font-weight: bold;
+}
+.order-summary .total-amount {
+    color: red;
+    font-size: 18px;
+}
+.return-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.return-btn button {
+    background-color: #e3f309;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.return-btn button:hover {
+    background-color: #c8d60a;
+}
+.main-info p{
+    margin: 1%;
+}
+.main-info span{
+    margin: 3%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài khoản</title>
+
+    <link rel="stylesheet" href="../assets/CSS/account.css">
+
+</head>
+<body>
+    <div class="account-container">
+        <div class="side-bar">
+            <div class="Block-item" style="background-color: #e3f309;">
+                <div class="item">
+                    <div class="box-icon"></div>
+                    <li><a href="../page/account.html" class="item-name" >Trang chủ tài khoản</a></li>
+                </div>
+            </div>
+            <div class="Block-item">
+                <div class="item">
+                    <div class="box_icon"></div>
+                    <li><a href="../page/account12.html" class="item-name">Địa chỉ</a></li>
+                </div>
+            </div>
+            <div class="Block-item">
+                <div class="item">
+                    <div class="box_icon"></div>
+                    <li><a href="../page/account13.html" class="item-name">Danh sách đơn hàng</a></li>
+                </div>
+            </div>
+            <div class="Block-item">
+                <div class="item">
+                    <div class="box-icon"></div>
+                    <li><a href="../index.html" class="item-name">Đăng xuất</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="box-heading"><h2>Thông tin tài khoản</h2></div>
+            <div class="form-line">
+                <label class="line-name">Họ tên</label>
+                <input required type="text" id="customer-name" name="fullname" value="Hà" >
+            </div>
+            <div class="form-line" style="justify-content: flex-start;">
+                <label class="line-name">Giới tính</label>
+                <div class="gender-checkboxs" >
+                    <input type="checkbox" name="gender" id="gender" class="gender-checkbox">
+                    Nam
+                    <input type="checkbox" name="gender" id="gender" class="gender-checkbox">
+                    Nữ
+                </div>
+            </div>
+            <div class="form-line">
+                <label class="line-name">Số điện thoại</label>
+                <input required="number" type="text" placeholder="1234567890">
+            </div>
+            <div class="form-line">
+                <label class="line-name">Email</label>
+                <input required type="text" placeholder="@email.com">
+            </div>
+            <div class="form-line" style="display: flex; justify-content: center; width: 100%;">
+                <button type="submit" class="save-change" onclick="submitForm()">Lưu Thay Đổi</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
