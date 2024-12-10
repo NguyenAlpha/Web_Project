@@ -18,10 +18,12 @@ a {
 }
 
 .main-content {
-  width: 1200px;
+  width: 80%;
   max-width: calc(100% - 20px);
   margin: 0px auto;
   text-decoration: none;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .logo img {
@@ -56,7 +58,7 @@ a {
   align-items: center;
   min-width: 200px;
 }
-.search-box{
+.search-box {
   width: 100%;
 }
 .search input {
@@ -252,11 +254,31 @@ a {
 
 /* ========================================= MAIN ADV===================================== */
 .huge-advertisement--img {
-  margin-top: 16px;
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Chiếm toàn bộ chiều ngang màn hình */
+  height: auto; /* Chiều cao tự động theo nội dung */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px; /* Bo tròn container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+.huge-advertisement {
   width: 100%;
+
+  overflow: hidden;
 }
 
+.listimg {
+  display: flex;
+  gap: 16px; 
+  /* width: 200%; */
+}
+/* .listimg {
+  display: flex;
+  /* width: 100%; */
+/* } */ */
 .Laptop {
   width: 500px;
   margin: 0 auto;
@@ -283,7 +305,6 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.main-content
-{
+.main-content {
   text-decoration: none;
 }
