@@ -1,1 +1,0 @@
-các file trong folder này dùng để test các chức năng cần kiểm
