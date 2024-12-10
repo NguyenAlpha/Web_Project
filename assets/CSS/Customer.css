@@ -57,7 +57,7 @@ h1, h2 {
 
 /* Main Content */
 .main-content {
-    margin-left: 270px;
+    margin-left: 150px;
     padding: 20px;
     flex: 1;
     display: flex;
