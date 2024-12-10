@@ -258,28 +258,28 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%; /* Chiếm toàn bộ chiều ngang màn hình */
-  height: auto; /* Chiều cao tự động theo nội dung */
+  height: 80%; /* Chiều cao tự động theo nội dung */
   background-color: #ffffff;
   padding: 20px;
   border-radius: 12px; /* Bo tròn container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
 }
 .huge-advertisement {
-  width: 100%;
+  /* width: 100%; */
 
   overflow: hidden;
 }
 
 .listimg {
   display: flex;
-  gap: 16px; 
+  gap: 16px;
   /* width: 200%; */
 }
 /* .listimg {
   display: flex;
   /* width: 100%; */
-/* } */ */
-.Laptop {
+/* } */
+*/ .Laptop {
   width: 500px;
   margin: 0 auto;
   font-size: 30px;
