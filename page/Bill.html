@@ -366,12 +366,31 @@
         </tbody>
           </table>
            </div class="total">
+           <p style="margin-top: 20px; font-size: 18px;display: flex; justify-content: center; align-items: center; font-weight: bold;">Tổng tiền: 10.000.000đ</p>
           <div class="price">
+            
             <p class="pprice">
-              Tổng tiền: <span> 10.000.000<sub>đ</sub></span>
+              <a href="/page/customer-receipt.html">Thanh toán ngay</a>
              
             </p> 
+            <div class="btn-container" >
+              <button class="btn btn-cash" onclick="handlePayment('Tiền mặt')">Thanh toán Tiền mặt</button>
+              <button class="btn btn-bank" onclick="handlePayment('Chuyển khoản')">Thanh toán Chuyển khoản</button>
+            </div>
+           
+          
+            <script>
+              function handlePayment(method) {
+                const result = document.getElementById('result');
+                if (method === 'Tiền mặt') {
+                  result.textContent = "Bạn đã chọn thanh toán bằng tiền mặt.";
+                } else if (method === 'Chuyển khoản') {
+                  result.textContent = "Bạn đã chọn thanh toán bằng chuyển khoản.";
+                }
+              }
+            </script>
           </div>
+          <p id="result" style="margin-top: 20px; font-size: 18px;display: flex; justify-content: center; align-items: center; font-weight: bold;"></p>
           <div class="chon">
             
           </div>
