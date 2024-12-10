@@ -43,8 +43,12 @@
         <div class="main-content">
             <div class="box-heading"><h2>Thông tin tài khoản</h2></div>
             <div class="form-line">
-                <label class="line-name">Họ tên</label>
-                <input required type="text" id="customer-name" name="fullname" value="Hà" >
+                <label class="line-name" style="font-size: 150%;">Tên đăng nhập:</label>
+                <label class="line-name" style="font-size: 150%;">hoangha241</label>
+            </div>
+            <div class="form-line">
+                <label class="line-name">Họ tên*</label>
+                <input required type="text" id="customer-name" name="fullname" value="hoangha241" required>
             </div>
             <div class="form-line" style="justify-content: flex-start;">
                 <label class="line-name">Giới tính</label>
@@ -56,12 +60,12 @@
                 </div>
             </div>
             <div class="form-line">
-                <label class="line-name">Số điện thoại</label>
-                <input required="number" type="text" placeholder="1234567890">
+                <label class="line-name">Số điện thoại*</label>
+                <input required="number" type="text" placeholder="1234567890" required>
             </div>
             <div class="form-line">
-                <label class="line-name">Email</label>
-                <input required type="text" placeholder="@email.com">
+                <label class="line-name">Email*</label>
+                <input required type="text" placeholder="@email.com" required>
             </div>
             <div class="form-line" style="display: flex; justify-content: center; width: 100%;">
                 <button type="submit" class="save-change" onclick="submitForm()">Lưu Thay Đổi</button>
